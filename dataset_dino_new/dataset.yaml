@@ -1,0 +1,9 @@
+path: C:/Users/User/Desktop/final_pig_v0/dataset_dino_new
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: eye
+  1: face
+  2: nose

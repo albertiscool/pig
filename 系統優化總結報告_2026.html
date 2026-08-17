@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #333; line-height: 1.6; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #2980b9; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    .badge { display: inline-block; padding: 3px 8px; font-size: 12px; background-color: #e74c3c; color: white; border-radius: 4px; margin-right: 5px; }
+    .badge-success { background-color: #27ae60; }
+    .module-box { background-color: #f8f9fa; border-left: 4px solid #34495e; padding: 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .footer { text-align: center; margin-top: 50px; font-size: 14px; color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+    <h1>豬隻即時呼吸率監控系統 (Live BPM) - 架構優化總覽</h1>
+    <p><strong>專案名稱：</strong> 豬隻 M1/M2/M3 多通道即時呼吸率分析 <br>
+       <strong>報告產出日期：</strong> 2026 年 04 月</p>
+
+    <!-- SECTION 1 -->
+    <h2><span class="badge">1</span> 系統架構重構 (Thread & Process 雙動能)</h2>
+    <div class="module-box">
+        <strong>挑戰：</strong> YOLO推論與數學解算的互相拖累，導致影像嚴重卡頓。<br>
+        <strong>解決方案：</strong> 全面導入 <code>Producer-Consumer</code> 模式：
+        <ul>
+            <li><strong>Producer (執行緒):</strong> 專注於影像與熱像儀同步存取，並全速執行 GPU YOLO 推論。</li>
+            <li><strong>Consumer (多行程):</strong> 在完全不佔用主渲染時間的情況下，獨立開啟 CPU 背景行程吃下所有矩陣數據，執行龐大數學運算。</li>
+        </ul>
+    </div>
+
+    <!-- SECTION 2 -->
+    <h2><span class="badge">2</span> M2/M3 通道「神經級」離線演算法還原</h2>
+    <div class="module-box">
+        <strong>挑戰：</strong> 單純使用均值無法抗衡複雜的豬隻熱像儀背景雜訊。<br>
+        <strong>解決方案：</strong> 將離線版的影像分析邏輯完全移植到即時視窗中：
+        <ul>
+            <li><strong>M2 (Otsu & CLAHE):</strong> 針對 50x50 鼻部做對比強化，取出最大連通冷區，並實裝 <code>area_ratio * (255 - mean)</code>，完美捕捉呼吸面積與溫度的雙重變動。</li>
+            <li><strong>M3 (同心圓高斯):</strong> 利用臉頰邊緣 80%~100% 高溫帶與鼻心加權溫差作抵銷，排除全身散熱的影響。</li>
+        </ul>
+    </div>
+
+    <!-- SECTION 3 -->
+    <h2><span class="badge badge-success">3</span> 消除濾波器邊緣效應 (Edge Effects)</h2>
+    <div class="module-box">
+        <strong>解決過程與發現：</strong> 
+        在即時運算中，若套用離線版長達 15 秒的滑動平均 (MA Convolution) 會產生巨大的人造低頻巨浪 (導致產生 15 BPM 嚴重誤差)。<br>
+        <strong>最終優化管道：</strong>
+        重新排序了安全的短視窗濾波邏輯：<br>
+        <code>Scipy 線性去趨勢 (Detrend)</code> ➔ <code>Butterworth 帶通濾波</code> ➔ <code>Savgol Filter 平滑</code> ➔ <code>重採樣至基準 10 Hz 消除掉幀誤差</code> ➔ <code>Hanning 窗</code> ➔ <code>FFT 倍數 Zero-Pad</code>。
+    </div>
+
+    <!-- SECTION 4 -->
+    <h2><span class="badge badge-success">4</span> 防護過濾網 (Dual-Band 與 IQR 統計)</h2>
+    <p>為了徹底確保即時數據能具有「工程應用等級」的保護機制，實作了以下兩項安全防禦：</p>
+    <table>
+        <tr>
+            <th>機制名稱</th>
+            <th>目的與運作方式</th>
+        </tr>
+        <tr>
+            <td><strong>雙頻譜倍頻防禦 (Dual-Band)</strong></td>
+            <td>分割低頻段 (0.2~1.4Hz) 與高頻段 (0.8~2.5Hz) 分別計算 SNR。精準防禦偶發的高頻強烈信號（諧波），阻止 30 BPM 的呼吸被誤判成 60 BPM。</td>
+        </tr>
+        <tr>
+            <td><strong>四分位距統計法 (IQR)</strong></td>
+            <td>在影片播完統計最終總表時，利用 25%~75% 中位距界線，強制剃除了因暖機或搖頭產生的「離群極端選票」，使終場決定的 BPM 形成純淨平均。</td>
+        </tr>
+    </table>
+
+    <!-- SECTION 5 -->
+    <h2><span class="badge">5</span> 模組化參數切換設計</h2>
+    <div class="module-box">
+        <strong>開發巧思：</strong> 為了避免維護多支冗餘腳本，新增了 <code>--live-bpm</code> 參數。
+        <ul>
+            <li><strong>作為 Auto_Pipeline 前置處理時：</strong> 預設為全速離線生成模式，完全關閉背景運作以求最極速地生出 CSV 報表。</li>
+            <li><strong>作為農場監控 Demo 時：</strong> 輸入 <code>--live-bpm</code>，即刻加掛數學 Consumer 背景引擎，開始極流暢的即時推論與 BPM 印出。</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        Generated automatically by Google DeepMind Advanced Agentic AI • 豬隻呼吸率研究優化專案
+    </div>
+
+</body>
+</html>

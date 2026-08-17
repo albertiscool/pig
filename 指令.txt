@@ -1,0 +1,8 @@
+python v0\auto_rr_pipeline.py --rgb "data\test_vid\484-6_11410181546_可見光_正面(30秒呼吸34次).mp4" --thm "data\test_vid\484-6_11410181546_熱成像_正面(30秒呼吸34次).mp4"
+python auto_rr_pipeline.py --rgb "data\test_vid\478-2_11410181559_可見光_正面(30秒呼吸46次).mp4" --thm "data\test_vid\478-2_11410181559_熱成像_正面(30秒呼吸46次).mp4"
+python v1\auto_rr_pipeline.py --rgb "data\test_vid\472-10_11410181618_可見光_正面(30秒呼吸56次).mp4" --thm "data\test_vid\472-10_11410181618_熱成像_正面(30秒呼吸56次).mp4"
+python auto_rr_pipeline.py --rgb "data\test_vid\15棟_295-6_11407031549_可見光_正面.mp4" --thm "data\test_vid\15棟_295-6_11407031549_可見光_正面.mp4"
+$env:PYTHONUTF8="1"; C:\pingta\python.exe vid_test2_optim.py --rgb "data\test_vid\484-6_11410181546_可見光_正面(30秒呼吸34次).mp4" --thm "data\test_vid\484-6_11410181546_熱成像_正面(30秒呼吸34次).mp4"
+$env:PYTHONUTF8="1"; C:\pingta\python.exe auto_rr_pipeline.py --rgb "data\test_vid\484-6_11410181546_可見光_正面(30秒呼吸34次).mp4" --thm "data\test_vid\484-6_11410181546_熱成像_正面(30秒呼吸34次).mp4"
+python vid_test2_optim.py --rgb "data\test_vid\484-6_11410181546_可見光_正面(30秒呼吸34次).mp4" --thm "data\test_vid\484-6_11410181546_熱成像_正面(30秒呼吸34次).mp4"
+295-6 60秒62次
