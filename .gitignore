@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Large binaries & media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pth
+*.pt
+*.onnx
+*.dll
+*.rar
+*.zip
+*.tar.gz
+
+# Output folders & Temporary caches
+output_*/
+output/
+data/
+runs/
+scratch/
+.tempmediaStorage/
+.system_generated/
+*.log
