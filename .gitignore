@@ -1,0 +1,25 @@
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.log
+
+# Large Binaries & Models (>100MB GitHub limit)
+*.pth
+*.engine
+*.dll
+*.so
+
+# Large Media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar.gz
+
+# Outputs
+xavier_test_output.mp4
+output/
+runs/
