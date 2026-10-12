@@ -79,3 +79,30 @@ python export_tensorrt.py --model parameters/nose_eyes_face_0817.pt --half
 ```bash
 python live_pig_monitor_xavier.py --model parameters/nose_eyes_face_0817.engine
 ```
+
+---
+
+## 📊 實測效能基準 (Benchmark Results)
+
+### 1. TensorRT FP16 vs 原始 PyTorch 實測
+在 300 幀基準測試影片實測下（RTX 5070 Ti）：
+* **PyTorch (`.pt`)**：平均延遲 19.36 ms / 幀，幀率 **51.7 FPS**
+* **TensorRT (`.engine`)**：平均延遲 16.44 ms / 幀，幀率 **60.8 FPS**
+* **整體加速**：**+17.7% FPS** (+9.1 FPS)，每幀省下 ~2.92 ms！在 Jetson Xavier (帶 DLA/Tensor Cores) 上預期效益將提升 2~3 倍。
+
+![TensorRT vs PyTorch Snapshot](benchmark_results/obs_trt_snapshot.jpg)
+
+### 2. GStreamer + DMA 零拷貝搬移實測
+* **原始 CPU 解碼與搬移**：49.2 FPS，CPU 佔用率高
+* **DMA 鎖頁非同步搬移**：53.6 FPS，資料搬移與推論運算完全重疊，大幅釋放處理器負載。
+
+![DMA Benchmark Snapshot](benchmark_results/obs_dma_snapshot.jpg)
+
+---
+
+## ⚠️ Jetson Xavier 部署注意事項
+1. **TensorRT Engine 跨平台性**：
+   請勿直接複製 Windows 或 x86 筆電產生的 `.engine` 檔，因為 TensorRT 引擎會針對 GPU 架構（如 Volta SM 7.2 vs Ada/Blackwell）進行特定硬體指令編譯。請將 `.pt` 權重複製至 Xavier 後，在 Xavier 本機執行 `python export_tensorrt.py` 生成專屬引擎。
+2. **PyTorch 與 Torchvision 安裝**：
+   請透過 NVIDIA 官方提供的 Jetson Linux aarch64 預編譯 wheel 進行安裝，避免使用一般 x86 pip wheel。
+
