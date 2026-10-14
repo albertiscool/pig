@@ -1,4 +1,4 @@
-﻿import cv2
+import cv2
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -221,9 +221,10 @@ def run_optimized_registration(rgb_path, thm_path, out_dir, weights):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
+    _new_thm = os.path.join(ROOT_DIR, "parameters", "thm", "best_thermal_nose.pt")
     weights_config = {
         'face': os.path.join(ROOT_DIR, "parameters", "face.pt"),
-        'yang': os.path.join(ROOT_DIR, "parameters", "thm", "best_yang.pt"),
+        'yang': _new_thm if os.path.exists(_new_thm) else os.path.join(ROOT_DIR, "parameters", "thm", "best_yang.pt"),
         'p2p':  os.path.join(ROOT_DIR, "parameters", "thm", "swin_p2p_best_re.pth"),
         'ecb':  os.path.join(ROOT_DIR, "parameters", "pig_ecb_best.pth"),
         'feat': os.path.join(ROOT_DIR, "parameters", "pig_features_ecb.npy"),

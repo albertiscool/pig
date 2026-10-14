@@ -1,4 +1,4 @@
-﻿import torch
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
@@ -48,8 +48,10 @@ class SwinTransformerP2P(nn.Module):
 # --------------------
 # --- CONFIGURATION ---
 # --------------------
+MAPPING_NPZ_PATH = os.path.join(ROOT_DIR, "parameters", "thm", "rgb_to_thermal_mapping.npz")
 P2P_MODEL_PATH = os.path.join(ROOT_DIR, "parameters", "thm", "swin_p2p_best_re.pth")
-YOLOV8_DETECT_PATH = os.path.join(ROOT_DIR, "parameters", "thm", "best_yang.pt")
+_new_det = os.path.join(ROOT_DIR, "parameters", "thm", "best_thermal_nose.pt")
+YOLOV8_DETECT_PATH = _new_det if os.path.exists(_new_det) else os.path.join(ROOT_DIR, "parameters", "thm", "best_yang.pt")
 RGB_VIDEO_PATH = os.path.join(ROOT_DIR, "data", "test_vid", "484-6_11410181546_可見光_正面(30秒呼吸34次).mp4")
 THM_VIDEO_PATH = os.path.join(ROOT_DIR, "data", "test_vid", "484-6_11410181546_熱成像_正面(30秒呼吸34次).mp4")
 

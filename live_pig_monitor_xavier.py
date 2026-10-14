@@ -29,6 +29,7 @@ if SCRIPT_DIR not in sys.path:
 
 from jetson_dma_utils import build_jetson_dma_rtsp_pipeline
 from two_stage_dma_detector import TwoStageDMAPigDetector
+from thermal_projection import RGBToThermalProjector
 
 # ----------------- 模型定義：ViT + ResNet (ECB Hybrid) -----------------
 class ECBHybridModel(nn.Module):
@@ -89,7 +90,7 @@ class RealtimeRespirationEstimator:
 
 # ----------------- 主監控系統 -----------------
 class XavierPigMonitorSystem:
-    def __init__(self, yolo_model_path, reid_model_path=None, db_feat_path=None, db_label_path=None):
+    def __init__(self, yolo_model_path, reid_model_path=None, db_feat_path=None, db_label_path=None, mapping_path=None):
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         print(f"[*] [Xavier Pipeline] 初始化核心系統 (Device: {self.device})...")
 
@@ -102,10 +103,15 @@ class XavierPigMonitorSystem:
         self.known_labels = None
         self._init_reid(reid_model_path, db_feat_path, db_label_path)
 
-        # 3. 呼吸率估計器
+        # 3. 雙光視差補償投影器 (4x2 矩陣，取代 137MB Swin Transformer P2P)
+        if mapping_path is None:
+            mapping_path = os.path.join(SCRIPT_DIR, "parameters", "thm", "rgb_to_thermal_mapping.npz")
+        self.projector = RGBToThermalProjector(mapping_path)
+
+        # 4. 呼吸率估計器
         self.rr_estimator = RealtimeRespirationEstimator(fps=30.0)
 
-        # 4. 身分辨識抽樣節流 (每 30 幀辨識一次，避免每幀跑 ViT 消耗 GPU)
+        # 5. 身分辨識抽樣節流 (每 30 幀辨識一次，避免每幀跑 ViT 消耗 GPU)
         self.current_pig_id = "Detecting..."
         self.current_sim = 0.0
         self.reid_interval = 30
@@ -188,16 +194,33 @@ class XavierPigMonitorSystem:
             if crop_face.size > 0:
                 self.current_pig_id, self.current_sim = self.identify_face(crop_face)
 
-        # 3. 眼溫量測 (若有熱成像串流，對齊抓取淚腺最高溫)
+        # 3. 眼溫量測 (使用視差補償將 RGB 眼睛動態投影至熱成像圖，抓取淚腺最高溫)
         eye_temp = 38.6  # 基準預設體溫 (豬隻正常為 38.5 ~ 39.5°C)
+        projected_thm_eyes = []
         if frame_thm is not None and eyes_boxes:
-            # 擷取眼部 ROI 的熱成像矩陣
-            ex1, ey1, ex2, ey2 = eyes_boxes[0][0]
-            thm_roi = frame_thm[max(0, ey1):min(h, ey2), max(0, ex1):min(w, ex2)]
-            if thm_roi.size > 0:
-                # 假設熱成像以 Green/Gray 或溫標轉換
-                max_val = np.max(thm_roi)
-                eye_temp = 35.0 + (max_val / 255.0) * 6.0  # 動態線性映射示例
+            w_ref, ref_src = self.projector.get_depth_ref(
+                nose_box=nose_box[0] if nose_box else None,
+                face_box=face_box[0] if face_box else None
+            )
+            th_h, th_w = frame_thm.shape[:2]
+            for (ex1, ey1, ex2, ey2), e_conf in eyes_boxes:
+                thm_box, is_valid = self.projector.project_eye_box(
+                    [ex1, ey1, ex2, ey2], w_ref=w_ref,
+                    cur_rw=w, cur_rh=h,
+                    cur_tw=th_w, cur_th=th_h
+                )
+                if is_valid:
+                    temp, peak_pt = self.projector.extract_eye_temperature(frame_thm, thm_box)
+                    projected_thm_eyes.append({
+                        'box': thm_box,
+                        'temp': temp,
+                        'peak_pt': peak_pt,
+                        'conf': e_conf,
+                        'ref_src': ref_src
+                    })
+            if projected_thm_eyes:
+                # 淚腺核心最高溫
+                eye_temp = max(e['temp'] for e in projected_thm_eyes)
 
         # 4. 呼吸率估計 (抓取鼻孔訊號)
         nose_val = None
@@ -213,6 +236,7 @@ class XavierPigMonitorSystem:
             'face_box': face_box,
             'eyes_boxes': eyes_boxes,
             'nose_box': nose_box,
+            'thermal_eyes': projected_thm_eyes,
             'pig_id': self.current_pig_id,
             'sim': self.current_sim,
             'eye_temp': eye_temp,
@@ -238,7 +262,9 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="NVIDIA Jetson Xavier 豬隻健康全整合監控系統")
     parser.add_argument("--source", default=os.path.join(ROOT_DIR, "handover_pig_system", "sample_data", "sample_rgb.mp4"), help="輸入視訊或 RTSP 串流")
+    parser.add_argument("--source-thm", default=None, help="輸入熱成像視訊或 RTSP 串流 (選填，啟用雙光動態眼溫測量)")
     parser.add_argument("--model", default=os.path.join(ROOT_DIR, "parameters", "nose_eyes_face_0817.pt"), help="YOLO 模型 (.pt 或 .engine)")
+    parser.add_argument("--mapping", default=os.path.join(SCRIPT_DIR, "parameters", "thm", "rgb_to_thermal_mapping.npz"), help="雙光視差轉換參數檔")
     parser.add_argument("--out", default=os.path.join(SCRIPT_DIR, "xavier_live_output.mp4"), help="輸出驗證影片路徑")
     args = parser.parse_args()
 
@@ -247,13 +273,16 @@ def main():
         yolo_model_path=args.model,
         reid_model_path=os.path.join(param_dir, "pig_ecb_best.pth"),
         db_feat_path=os.path.join(param_dir, "pig_features_ecb.npy"),
-        db_label_path=os.path.join(param_dir, "pig_labels_ecb.npy")
+        db_label_path=os.path.join(param_dir, "pig_labels_ecb.npy"),
+        mapping_path=args.mapping
     )
 
     cap = open_video_source(args.source)
     if not cap.isOpened():
         print(f"❌ 無法開啟視訊源: {args.source}")
         return
+
+    cap_thm = open_video_source(args.source_thm) if args.source_thm else None
 
     w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -263,6 +292,8 @@ def main():
     writer = cv2.VideoWriter(args.out, fourcc, fps, (w, h))
 
     print(f"\n🚀 [Xavier Monitor] 開始即時處理串流 (解析度: {w}x{h}, 基準 FPS: {fps:.1f})...")
+    if cap_thm:
+        print("[*] [雙光模式] 已啟用熱成像對齊輸入串流！")
     frame_idx = 0
     start_time = time.time()
 
@@ -270,9 +301,13 @@ def main():
         ret, frame = cap.read()
         if not ret: break
 
+        frame_thm = None
+        if cap_thm:
+            ret_t, frame_thm = cap_thm.read()
+
         frame_idx += 1
         t0 = time.time()
-        res = system.process_frame(frame)
+        res = system.process_frame(frame, frame_thm=frame_thm)
         latency = (time.time() - t0) * 1000.0
         cur_fps = 1000.0 / max(1.0, latency)
 
@@ -308,6 +343,8 @@ def main():
             print(f"  └─ 進度: {frame_idx} 幀 (即時推論速度: {cur_fps:.1f} FPS, 延遲: {latency:.1f} ms)")
 
     cap.release()
+    if cap_thm:
+        cap_thm.release()
     writer.release()
     total_time = time.time() - start_time
     print(f"\n🎉 處理完成！平均幀率: {frame_idx/max(0.1, total_time):.1f} FPS，結果影片: {args.out}")

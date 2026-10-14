@@ -19,10 +19,11 @@
 
 ## 📂 資料夾架構
 
-```text
 xavier/
 ├── 📄 live_pig_monitor_xavier.py    # 🌟【主旗艦程式】全功能整合即時推論 (DMA+五官+身分+眼溫+呼吸率)
 ├── 📄 two_stage_dma_detector.py      # 🔍 二階段 DMA 高精器官偵測模組 (支援 .engine / .pt)
+├── 📄 thermal_projection.py         # 🔥【全新升級】雙光視差補償眼睛投影模組 (取代 137MB Swin P2P)
+├── 📄 video_eye_to_thermal.py       # 🎯 雙光時間戳記跳號對時與眼睛跨光譜投影校準管線
 ├── 📄 jetson_dma_utils.py            # ⚡ GStreamer 硬體 DMA Pipeline 與鎖頁搬移工具
 ├── 📄 export_tensorrt.py             # 🚀 TensorRT FP16 一鍵導出工具 (在 Xavier 上執行)
 ├── 📄 README.md                      # 📖 本說明文件
@@ -31,7 +32,10 @@ xavier/
 │   ├── nose_eyes_face_0817.pt        # 最新 YOLO 偵測權重
 │   ├── pig_ecb_best.pth              # ViT + ResNet 身分特徵抽取模型
 │   ├── pig_features_ecb.npy          # 7 隻豬隻 512-D 特徵資料庫
-│   └── pig_labels_ecb.npy            # 註冊豬隻 ID 標籤
+│   ├── pig_labels_ecb.npy            # 註冊豬隻 ID 標籤
+│   └── 📁 thm/                       # 🌡️ 熱像模型與雙光對齊庫
+│       ├── best_thermal_nose.pt      # 🌟【全新】熱像專用 YOLOv8m 豬鼻偵測權重 (取代 best_yang)
+│       └── rgb_to_thermal_mapping.npz# 🌟【全新】雙光視差轉換矩陣 (誤差中位數 11.7px，取代 Swin P2P)
 │
 ├── 📁 respiration_rate_v0/           # 🫁 v0 準確呼吸率多通道滑窗 FFT 演算法
 │   ├── auto_rr_pipeline.py           # v0 呼吸率分析一鍵腳本
@@ -43,7 +47,7 @@ xavier/
 │   ├── 02_update_pig_database.py     # 自動萃取向量並更新資料庫
 │   └── 03_evaluate_pig_id_folder.py  # 測試集身分比對評估
 │
-└── 📁 sample_data/                   # 🎬 本機測試用示範短片 (sample_rgb.mp4)
+└── 📁 sample_data/                   # 🎬 示範短片 (sample_rgb.mp4, sample_thm.mp4)
 ```
 
 ---
