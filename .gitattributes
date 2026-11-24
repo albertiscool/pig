@@ -1,0 +1,5 @@
+v4/parameters/pig_ecb_best.pth filter=lfs diff=lfs merge=lfs -text
+recorded_videos/rec_20261111_113613/rec_20261111_113613_rgb.mp4 filter=lfs diff=lfs merge=lfs -text
+recorded_videos/rec_20261111_113613/rec_20261111_113613_thm.mp4 filter=lfs diff=lfs merge=lfs -text
+recorded_videos/rec_20261111_113922/rec_20261111_113922_rgb.mp4 filter=lfs diff=lfs merge=lfs -text
+recorded_videos/rec_20261111_113922/rec_20261111_113922_thm.mp4 filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,45 @@
+================================================================================
+YOLO Pig Face Detection Experiment: Fence Occlusion + Hard Negative Fine-Tuning
+================================================================================
+Baseline Weights    : C:\Users\User\Desktop\final_pig_v0\pig_id_package\models\face.pt
+Fine-Tuned Weights  : C:\Users\User\Desktop\final_pig_v0\experiments\yolo_fence_occlusion_exp\runs\face_fence_ft\weights\best.pt
+GPU Device          : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Total Elapsed       : 540.9s
+
+--- Dataset Splits (Strict Zero-Leakage) ---
+Train               : 1520 imgs (1000 real clean + 400 fence-occluded @15.5% + 120 hard_neg)
+Validation (Clean)  : 180 real imgs (v3/data/face_train/valid)
+Test Clean          : 180 real imgs (v3/data/face_train/test)
+Test Heavy Occluded : 180 imgs (v3/data/face_train/test + unseen heavy fence @32.2%)
+Test Hard Negative  : 23 imgs (held-out pig_7/pig_24 non-faces + AI pig butts/redboard crops)
+
+--- Metric Comparison Table ---
+Benchmark & Metric                   | Baseline (face.pt) | Fine-Tuned (best.pt) |      Delta
+--------------------------------------------------------------------------------------------
+Clean Test - Precision               |             99.97% |               96.70% |     -3.27%
+Clean Test - Recall                  |            100.00% |              100.00% |     +0.00%
+Clean Test - mAP@0.5                 |             99.50% |               99.18% |     -0.32%
+Clean Test - mAP@0.5:0.95            |             85.73% |               73.38% |    -12.35%
+--------------------------------------------------------------------------------------------
+Occluded Test - Precision            |             25.54% |               78.35% |    +52.81%
+Occluded Test - Recall               |             37.22% |               80.44% |    +43.22%
+Occluded Test - mAP@0.5              |             17.66% |               84.58% |    +66.92%
+Occluded Test - mAP@0.5:0.95         |              5.27% |               50.72% |    +45.44%
+--------------------------------------------------------------------------------------------
+Hard-Neg Img FP Rate (conf>=0.25)    |             13.04% |                4.35% |     -8.70%
+Hard-Neg Box FPs (conf>=0.25)        |                  5 |                    1 |         -4
+Hard-Neg Img FP Rate (conf>=0.45)    |              8.70% |                0.00% |     -8.70%
+Hard-Neg Box FPs (conf>=0.45)        |                  3 |                    0 |         -3
+
+--- Unseen Out-of-Distribution AI Fence Photos (face boxes @ conf>=0.20) ---
+  02_yolo_fullframe_metal_bars.png:
+    Baseline   : [(0.3565, [546, 0, 1042, 680])]
+    Fine-Tuned : []
+  01_reid_295-6_vertical_fence.png:
+    Baseline   : [(0.5737, [91, 0, 634, 952])]
+    Fine-Tuned : [(0.237, [90, 0, 662, 969])]
+
+--- Hard Negative FP Details (conf>=0.25) ---
+  Baseline   : {'heldout_ai_neg_full.jpg': [0.444, 0.396], 'heldout_ai_puddle_floor.jpg': [0.83, 0.551], 'heldout_ai_red_board.jpg': [0.668]}
+  Fine-Tuned : {'heldout_pig_24_17.jpg': [0.306]}
+================================================================================

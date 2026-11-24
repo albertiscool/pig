@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+env/
+venv/
+.venv/
+
+# YOLO dataset caches & logs
+*.cache
+*.log
+
+# Generated runtime / workstation outputs
+recorded_videos/*/recalculated/
+runs_workstation/
+live_monitor_outputs/
+test_video_outputs/
+
+# OS / Editor
+.DS_Store
+Thumbs.db

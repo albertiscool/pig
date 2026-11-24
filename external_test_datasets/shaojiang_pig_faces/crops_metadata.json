@@ -1,0 +1,3226 @@
+{
+  "gallery": {
+    "pig_1": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_1\\train_1441.jpg",
+        "source": "train_img/1/1441.jpg",
+        "split": "train_img",
+        "conf": 0.5107,
+        "sharpness": 651.24,
+        "size": [
+          64,
+          365
+        ]
+      }
+    ],
+    "pig_2": [],
+    "pig_3": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_3\\train_1385.jpg",
+        "source": "train_img/3/1385.jpg",
+        "split": "train_img",
+        "conf": 0.5796,
+        "sharpness": 181.16,
+        "size": [
+          466,
+          501
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_3\\train_1169.jpg",
+        "source": "train_img/3/1169.jpg",
+        "split": "train_img",
+        "conf": 0.5908,
+        "sharpness": 77.11,
+        "size": [
+          631,
+          478
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_3\\train_1381.jpg",
+        "source": "train_img/3/1381.jpg",
+        "split": "train_img",
+        "conf": 0.6279,
+        "sharpness": 132.73,
+        "size": [
+          417,
+          520
+        ]
+      }
+    ],
+    "pig_4": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1053.jpg",
+        "source": "train_img/4/1053.jpg",
+        "split": "train_img",
+        "conf": 0.564,
+        "sharpness": 134.93,
+        "size": [
+          384,
+          503
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1073.jpg",
+        "source": "train_img/4/1073.jpg",
+        "split": "train_img",
+        "conf": 0.543,
+        "sharpness": 192.19,
+        "size": [
+          426,
+          426
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1213.jpg",
+        "source": "train_img/4/1213.jpg",
+        "split": "train_img",
+        "conf": 0.7192,
+        "sharpness": 187.19,
+        "size": [
+          513,
+          539
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1225.jpg",
+        "source": "train_img/4/1225.jpg",
+        "split": "train_img",
+        "conf": 0.7485,
+        "sharpness": 323.61,
+        "size": [
+          453,
+          515
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1261.jpg",
+        "source": "train_img/4/1261.jpg",
+        "split": "train_img",
+        "conf": 0.6982,
+        "sharpness": 242.12,
+        "size": [
+          412,
+          487
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1273.jpg",
+        "source": "train_img/4/1273.jpg",
+        "split": "train_img",
+        "conf": 0.4766,
+        "sharpness": 246.83,
+        "size": [
+          342,
+          531
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1293.jpg",
+        "source": "train_img/4/1293.jpg",
+        "split": "train_img",
+        "conf": 0.4746,
+        "sharpness": 158.01,
+        "size": [
+          125,
+          691
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1305.jpg",
+        "source": "train_img/4/1305.jpg",
+        "split": "train_img",
+        "conf": 0.7549,
+        "sharpness": 54.79,
+        "size": [
+          207,
+          459
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1317.jpg",
+        "source": "train_img/4/1317.jpg",
+        "split": "train_img",
+        "conf": 0.54,
+        "sharpness": 62.69,
+        "size": [
+          144,
+          366
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1397.jpg",
+        "source": "train_img/4/1397.jpg",
+        "split": "train_img",
+        "conf": 0.6226,
+        "sharpness": 167.79,
+        "size": [
+          421,
+          418
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_4\\train_1433.jpg",
+        "source": "train_img/4/1433.jpg",
+        "split": "train_img",
+        "conf": 0.5698,
+        "sharpness": 398.98,
+        "size": [
+          370,
+          508
+        ]
+      }
+    ],
+    "pig_5": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_5\\train_13.jpg",
+        "source": "train_img/5/13.jpg",
+        "split": "train_img",
+        "conf": 0.8413,
+        "sharpness": 101.34,
+        "size": [
+          125,
+          403
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_5\\train_1005.jpg",
+        "source": "train_img/5/1005.jpg",
+        "split": "train_img",
+        "conf": 0.646,
+        "sharpness": 47.97,
+        "size": [
+          428,
+          445
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_5\\train_1121.jpg",
+        "source": "train_img/5/1121.jpg",
+        "split": "train_img",
+        "conf": 0.541,
+        "sharpness": 93.63,
+        "size": [
+          141,
+          268
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_5\\train_1433.jpg",
+        "source": "train_img/5/1433.jpg",
+        "split": "train_img",
+        "conf": 0.6479,
+        "sharpness": 196.45,
+        "size": [
+          394,
+          344
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_5\\train_1481.jpg",
+        "source": "train_img/5/1481.jpg",
+        "split": "train_img",
+        "conf": 0.8555,
+        "sharpness": 75.0,
+        "size": [
+          402,
+          466
+        ]
+      }
+    ],
+    "pig_6": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_6\\train_1005.jpg",
+        "source": "train_img/6/1005.jpg",
+        "split": "train_img",
+        "conf": 0.6841,
+        "sharpness": 277.88,
+        "size": [
+          108,
+          573
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_6\\train_1025.jpg",
+        "source": "train_img/6/1025.jpg",
+        "split": "train_img",
+        "conf": 0.6494,
+        "sharpness": 265.95,
+        "size": [
+          98,
+          575
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_6\\train_1273.jpg",
+        "source": "train_img/6/1273.jpg",
+        "split": "train_img",
+        "conf": 0.5371,
+        "sharpness": 240.34,
+        "size": [
+          92,
+          600
+        ]
+      }
+    ],
+    "pig_7": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1025.jpg",
+        "source": "train_img/7/1025.jpg",
+        "split": "train_img",
+        "conf": 0.5322,
+        "sharpness": 648.67,
+        "size": [
+          153,
+          584
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1073.jpg",
+        "source": "train_img/7/1073.jpg",
+        "split": "train_img",
+        "conf": 0.5708,
+        "sharpness": 275.39,
+        "size": [
+          138,
+          502
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1089.jpg",
+        "source": "train_img/7/1089.jpg",
+        "split": "train_img",
+        "conf": 0.4912,
+        "sharpness": 403.29,
+        "size": [
+          136,
+          568
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1109.jpg",
+        "source": "train_img/7/1109.jpg",
+        "split": "train_img",
+        "conf": 0.5649,
+        "sharpness": 243.55,
+        "size": [
+          115,
+          383
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1121.jpg",
+        "source": "train_img/7/1121.jpg",
+        "split": "train_img",
+        "conf": 0.6123,
+        "sharpness": 203.61,
+        "size": [
+          147,
+          427
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1129.jpg",
+        "source": "train_img/7/1129.jpg",
+        "split": "train_img",
+        "conf": 0.5547,
+        "sharpness": 328.36,
+        "size": [
+          148,
+          408
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_7\\train_1213.jpg",
+        "source": "train_img/7/1213.jpg",
+        "split": "train_img",
+        "conf": 0.5508,
+        "sharpness": 272.11,
+        "size": [
+          153,
+          281
+        ]
+      }
+    ],
+    "pig_8": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_8\\train_1157.jpg",
+        "source": "train_img/8/1157.jpg",
+        "split": "train_img",
+        "conf": 0.4543,
+        "sharpness": 586.89,
+        "size": [
+          369,
+          318
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_8\\train_1329.jpg",
+        "source": "train_img/8/1329.jpg",
+        "split": "train_img",
+        "conf": 0.5303,
+        "sharpness": 58.12,
+        "size": [
+          624,
+          423
+        ]
+      }
+    ],
+    "pig_9": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_9\\train_1109.jpg",
+        "source": "train_img/9/1109.jpg",
+        "split": "train_img",
+        "conf": 0.5264,
+        "sharpness": 369.36,
+        "size": [
+          286,
+          267
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_9\\train_1153.jpg",
+        "source": "train_img/9/1153.jpg",
+        "split": "train_img",
+        "conf": 0.5371,
+        "sharpness": 525.22,
+        "size": [
+          294,
+          245
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_9\\train_1201.jpg",
+        "source": "train_img/9/1201.jpg",
+        "split": "train_img",
+        "conf": 0.5205,
+        "sharpness": 280.29,
+        "size": [
+          276,
+          225
+        ]
+      }
+    ],
+    "pig_10": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_10\\train_1005.jpg",
+        "source": "train_img/10/1005.jpg",
+        "split": "train_img",
+        "conf": 0.6895,
+        "sharpness": 496.28,
+        "size": [
+          357,
+          336
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_10\\train_1025.jpg",
+        "source": "train_img/10/1025.jpg",
+        "split": "train_img",
+        "conf": 0.4766,
+        "sharpness": 411.83,
+        "size": [
+          368,
+          329
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_10\\train_1225.jpg",
+        "source": "train_img/10/1225.jpg",
+        "split": "train_img",
+        "conf": 0.543,
+        "sharpness": 133.68,
+        "size": [
+          134,
+          387
+        ]
+      }
+    ],
+    "pig_11": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_13.jpg",
+        "source": "train_img/11/13.jpg",
+        "split": "train_img",
+        "conf": 0.8359,
+        "sharpness": 100.64,
+        "size": [
+          115,
+          555
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_105.jpg",
+        "source": "train_img/11/105.jpg",
+        "split": "train_img",
+        "conf": 0.8042,
+        "sharpness": 710.5,
+        "size": [
+          72,
+          494
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_121.jpg",
+        "source": "train_img/11/121.jpg",
+        "split": "train_img",
+        "conf": 0.8271,
+        "sharpness": 595.59,
+        "size": [
+          99,
+          446
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_141.jpg",
+        "source": "train_img/11/141.jpg",
+        "split": "train_img",
+        "conf": 0.835,
+        "sharpness": 416.65,
+        "size": [
+          137,
+          408
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1089.jpg",
+        "source": "train_img/11/1089.jpg",
+        "split": "train_img",
+        "conf": 0.5166,
+        "sharpness": 220.67,
+        "size": [
+          132,
+          495
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1129.jpg",
+        "source": "train_img/11/1129.jpg",
+        "split": "train_img",
+        "conf": 0.5234,
+        "sharpness": 408.13,
+        "size": [
+          191,
+          424
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1153.jpg",
+        "source": "train_img/11/1153.jpg",
+        "split": "train_img",
+        "conf": 0.8662,
+        "sharpness": 446.67,
+        "size": [
+          123,
+          482
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1165.jpg",
+        "source": "train_img/11/1165.jpg",
+        "split": "train_img",
+        "conf": 0.8535,
+        "sharpness": 477.61,
+        "size": [
+          124,
+          484
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1177.jpg",
+        "source": "train_img/11/1177.jpg",
+        "split": "train_img",
+        "conf": 0.8101,
+        "sharpness": 472.2,
+        "size": [
+          144,
+          445
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1201.jpg",
+        "source": "train_img/11/1201.jpg",
+        "split": "train_img",
+        "conf": 0.7695,
+        "sharpness": 895.74,
+        "size": [
+          89,
+          633
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1213.jpg",
+        "source": "train_img/11/1213.jpg",
+        "split": "train_img",
+        "conf": 0.5928,
+        "sharpness": 713.69,
+        "size": [
+          79,
+          588
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1225.jpg",
+        "source": "train_img/11/1225.jpg",
+        "split": "train_img",
+        "conf": 0.7642,
+        "sharpness": 303.94,
+        "size": [
+          148,
+          437
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1261.jpg",
+        "source": "train_img/11/1261.jpg",
+        "split": "train_img",
+        "conf": 0.5889,
+        "sharpness": 329.74,
+        "size": [
+          198,
+          409
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1273.jpg",
+        "source": "train_img/11/1273.jpg",
+        "split": "train_img",
+        "conf": 0.8018,
+        "sharpness": 413.93,
+        "size": [
+          145,
+          451
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1293.jpg",
+        "source": "train_img/11/1293.jpg",
+        "split": "train_img",
+        "conf": 0.833,
+        "sharpness": 503.09,
+        "size": [
+          119,
+          495
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1305.jpg",
+        "source": "train_img/11/1305.jpg",
+        "split": "train_img",
+        "conf": 0.8237,
+        "sharpness": 443.0,
+        "size": [
+          137,
+          462
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1317.jpg",
+        "source": "train_img/11/1317.jpg",
+        "split": "train_img",
+        "conf": 0.7861,
+        "sharpness": 453.88,
+        "size": [
+          154,
+          457
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1337.jpg",
+        "source": "train_img/11/1337.jpg",
+        "split": "train_img",
+        "conf": 0.8184,
+        "sharpness": 507.26,
+        "size": [
+          145,
+          451
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1353.jpg",
+        "source": "train_img/11/1353.jpg",
+        "split": "train_img",
+        "conf": 0.834,
+        "sharpness": 448.77,
+        "size": [
+          144,
+          466
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1373.jpg",
+        "source": "train_img/11/1373.jpg",
+        "split": "train_img",
+        "conf": 0.8257,
+        "sharpness": 472.27,
+        "size": [
+          133,
+          467
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1385.jpg",
+        "source": "train_img/11/1385.jpg",
+        "split": "train_img",
+        "conf": 0.855,
+        "sharpness": 535.69,
+        "size": [
+          96,
+          527
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1397.jpg",
+        "source": "train_img/11/1397.jpg",
+        "split": "train_img",
+        "conf": 0.8472,
+        "sharpness": 609.05,
+        "size": [
+          99,
+          543
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1421.jpg",
+        "source": "train_img/11/1421.jpg",
+        "split": "train_img",
+        "conf": 0.8037,
+        "sharpness": 663.03,
+        "size": [
+          126,
+          472
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1433.jpg",
+        "source": "train_img/11/1433.jpg",
+        "split": "train_img",
+        "conf": 0.8252,
+        "sharpness": 513.88,
+        "size": [
+          153,
+          440
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1445.jpg",
+        "source": "train_img/11/1445.jpg",
+        "split": "train_img",
+        "conf": 0.5879,
+        "sharpness": 428.43,
+        "size": [
+          172,
+          400
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1469.jpg",
+        "source": "train_img/11/1469.jpg",
+        "split": "train_img",
+        "conf": 0.8223,
+        "sharpness": 340.62,
+        "size": [
+          164,
+          445
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_11\\train_1481.jpg",
+        "source": "train_img/11/1481.jpg",
+        "split": "train_img",
+        "conf": 0.834,
+        "sharpness": 489.04,
+        "size": [
+          122,
+          463
+        ]
+      }
+    ],
+    "pig_12": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_12\\train_1025.jpg",
+        "source": "train_img/12/1025.jpg",
+        "split": "train_img",
+        "conf": 0.5459,
+        "sharpness": 251.75,
+        "size": [
+          170,
+          308
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_12\\train_1041.jpg",
+        "source": "train_img/12/1041.jpg",
+        "split": "train_img",
+        "conf": 0.6538,
+        "sharpness": 367.16,
+        "size": [
+          164,
+          254
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_12\\train_1053.jpg",
+        "source": "train_img/12/1053.jpg",
+        "split": "train_img",
+        "conf": 0.6235,
+        "sharpness": 144.0,
+        "size": [
+          88,
+          342
+        ]
+      }
+    ],
+    "pig_13": [],
+    "pig_14": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_13.jpg",
+        "source": "train_img/14/13.jpg",
+        "split": "train_img",
+        "conf": 0.4736,
+        "sharpness": 96.39,
+        "size": [
+          402,
+          442
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1041.jpg",
+        "source": "train_img/14/1041.jpg",
+        "split": "train_img",
+        "conf": 0.4893,
+        "sharpness": 34.61,
+        "size": [
+          255,
+          394
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1201.jpg",
+        "source": "train_img/14/1201.jpg",
+        "split": "train_img",
+        "conf": 0.4756,
+        "sharpness": 331.92,
+        "size": [
+          95,
+          292
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1433.jpg",
+        "source": "train_img/14/1433.jpg",
+        "split": "train_img",
+        "conf": 0.5059,
+        "sharpness": 171.75,
+        "size": [
+          80,
+          576
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1445.jpg",
+        "source": "train_img/14/1445.jpg",
+        "split": "train_img",
+        "conf": 0.5156,
+        "sharpness": 162.49,
+        "size": [
+          88,
+          675
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1469.jpg",
+        "source": "train_img/14/1469.jpg",
+        "split": "train_img",
+        "conf": 0.6646,
+        "sharpness": 176.81,
+        "size": [
+          200,
+          421
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_14\\train_1481.jpg",
+        "source": "train_img/14/1481.jpg",
+        "split": "train_img",
+        "conf": 0.6143,
+        "sharpness": 284.51,
+        "size": [
+          128,
+          499
+        ]
+      }
+    ],
+    "pig_15": [],
+    "pig_16": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_105.jpg",
+        "source": "train_img/16/105.jpg",
+        "split": "train_img",
+        "conf": 0.7861,
+        "sharpness": 1040.64,
+        "size": [
+          89,
+          436
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_121.jpg",
+        "source": "train_img/16/121.jpg",
+        "split": "train_img",
+        "conf": 0.7461,
+        "sharpness": 993.63,
+        "size": [
+          83,
+          422
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_141.jpg",
+        "source": "train_img/16/141.jpg",
+        "split": "train_img",
+        "conf": 0.54,
+        "sharpness": 1087.55,
+        "size": [
+          90,
+          439
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1005.jpg",
+        "source": "train_img/16/1005.jpg",
+        "split": "train_img",
+        "conf": 0.6436,
+        "sharpness": 944.2,
+        "size": [
+          353,
+          369
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1025.jpg",
+        "source": "train_img/16/1025.jpg",
+        "split": "train_img",
+        "conf": 0.5776,
+        "sharpness": 753.19,
+        "size": [
+          365,
+          358
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1041.jpg",
+        "source": "train_img/16/1041.jpg",
+        "split": "train_img",
+        "conf": 0.4971,
+        "sharpness": 732.71,
+        "size": [
+          377,
+          358
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1073.jpg",
+        "source": "train_img/16/1073.jpg",
+        "split": "train_img",
+        "conf": 0.563,
+        "sharpness": 682.0,
+        "size": [
+          382,
+          373
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1089.jpg",
+        "source": "train_img/16/1089.jpg",
+        "split": "train_img",
+        "conf": 0.6577,
+        "sharpness": 615.85,
+        "size": [
+          380,
+          354
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1109.jpg",
+        "source": "train_img/16/1109.jpg",
+        "split": "train_img",
+        "conf": 0.6538,
+        "sharpness": 258.45,
+        "size": [
+          376,
+          352
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1121.jpg",
+        "source": "train_img/16/1121.jpg",
+        "split": "train_img",
+        "conf": 0.771,
+        "sharpness": 716.76,
+        "size": [
+          360,
+          326
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1129.jpg",
+        "source": "train_img/16/1129.jpg",
+        "split": "train_img",
+        "conf": 0.7939,
+        "sharpness": 835.07,
+        "size": [
+          370,
+          298
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1153.jpg",
+        "source": "train_img/16/1153.jpg",
+        "split": "train_img",
+        "conf": 0.7974,
+        "sharpness": 293.75,
+        "size": [
+          433,
+          337
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1165.jpg",
+        "source": "train_img/16/1165.jpg",
+        "split": "train_img",
+        "conf": 0.7266,
+        "sharpness": 293.69,
+        "size": [
+          377,
+          281
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1177.jpg",
+        "source": "train_img/16/1177.jpg",
+        "split": "train_img",
+        "conf": 0.7153,
+        "sharpness": 615.03,
+        "size": [
+          311,
+          269
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1201.jpg",
+        "source": "train_img/16/1201.jpg",
+        "split": "train_img",
+        "conf": 0.8066,
+        "sharpness": 426.0,
+        "size": [
+          405,
+          309
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1213.jpg",
+        "source": "train_img/16/1213.jpg",
+        "split": "train_img",
+        "conf": 0.626,
+        "sharpness": 203.64,
+        "size": [
+          360,
+          306
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_16\\train_1421.jpg",
+        "source": "train_img/16/1421.jpg",
+        "split": "train_img",
+        "conf": 0.4961,
+        "sharpness": 204.23,
+        "size": [
+          422,
+          310
+        ]
+      }
+    ],
+    "pig_17": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_17\\train_1009.jpg",
+        "source": "train_img/17/1009.jpg",
+        "split": "train_img",
+        "conf": 0.731,
+        "sharpness": 39.82,
+        "size": [
+          368,
+          720
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_17\\train_1381.jpg",
+        "source": "train_img/17/1381.jpg",
+        "split": "train_img",
+        "conf": 0.4629,
+        "sharpness": 25.42,
+        "size": [
+          478,
+          369
+        ]
+      }
+    ],
+    "pig_18": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_18\\train_1177.jpg",
+        "source": "train_img/18/1177.jpg",
+        "split": "train_img",
+        "conf": 0.4707,
+        "sharpness": 299.91,
+        "size": [
+          437,
+          447
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_18\\train_1385.jpg",
+        "source": "train_img/18/1385.jpg",
+        "split": "train_img",
+        "conf": 0.6602,
+        "sharpness": 66.65,
+        "size": [
+          288,
+          326
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_18\\train_125.jpg",
+        "source": "train_img/18/125.jpg",
+        "split": "train_img",
+        "conf": 0.4717,
+        "sharpness": 50.98,
+        "size": [
+          139,
+          326
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_18\\train_1097.jpg",
+        "source": "train_img/18/1097.jpg",
+        "split": "train_img",
+        "conf": 0.5908,
+        "sharpness": 474.02,
+        "size": [
+          309,
+          349
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_18\\train_1393.jpg",
+        "source": "train_img/18/1393.jpg",
+        "split": "train_img",
+        "conf": 0.6318,
+        "sharpness": 428.82,
+        "size": [
+          313,
+          336
+        ]
+      }
+    ],
+    "pig_19": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_19\\train_1177.jpg",
+        "source": "train_img/19/1177.jpg",
+        "split": "train_img",
+        "conf": 0.5176,
+        "sharpness": 279.3,
+        "size": [
+          287,
+          299
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_19\\train_1201.jpg",
+        "source": "train_img/19/1201.jpg",
+        "split": "train_img",
+        "conf": 0.4524,
+        "sharpness": 279.99,
+        "size": [
+          319,
+          316
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_19\\train_1469.jpg",
+        "source": "train_img/19/1469.jpg",
+        "split": "train_img",
+        "conf": 0.6636,
+        "sharpness": 524.02,
+        "size": [
+          334,
+          338
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_19\\train_1481.jpg",
+        "source": "train_img/19/1481.jpg",
+        "split": "train_img",
+        "conf": 0.7378,
+        "sharpness": 552.43,
+        "size": [
+          348,
+          346
+        ]
+      }
+    ],
+    "pig_20": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_20\\train_1397.jpg",
+        "source": "train_img/20/1397.jpg",
+        "split": "train_img",
+        "conf": 0.4785,
+        "sharpness": 58.72,
+        "size": [
+          362,
+          371
+        ]
+      }
+    ],
+    "pig_21": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_21\\train_141.jpg",
+        "source": "train_img/21/141.jpg",
+        "split": "train_img",
+        "conf": 0.7656,
+        "sharpness": 121.45,
+        "size": [
+          350,
+          406
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_21\\train_1005.jpg",
+        "source": "train_img/21/1005.jpg",
+        "split": "train_img",
+        "conf": 0.7139,
+        "sharpness": 147.99,
+        "size": [
+          419,
+          492
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_21\\train_1089.jpg",
+        "source": "train_img/21/1089.jpg",
+        "split": "train_img",
+        "conf": 0.6426,
+        "sharpness": 93.85,
+        "size": [
+          434,
+          568
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_21\\train_1109.jpg",
+        "source": "train_img/21/1109.jpg",
+        "split": "train_img",
+        "conf": 0.8042,
+        "sharpness": 45.45,
+        "size": [
+          704,
+          579
+        ]
+      }
+    ],
+    "pig_22": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_22\\train_1469.jpg",
+        "source": "train_img/22/1469.jpg",
+        "split": "train_img",
+        "conf": 0.7983,
+        "sharpness": 554.63,
+        "size": [
+          354,
+          314
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_22\\train_1481.jpg",
+        "source": "train_img/22/1481.jpg",
+        "split": "train_img",
+        "conf": 0.8252,
+        "sharpness": 552.62,
+        "size": [
+          339,
+          327
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_22\\train_1465.jpg",
+        "source": "train_img/22/1465.jpg",
+        "split": "train_img",
+        "conf": 0.7974,
+        "sharpness": 497.59,
+        "size": [
+          354,
+          313
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_22\\train_1477.jpg",
+        "source": "train_img/22/1477.jpg",
+        "split": "train_img",
+        "conf": 0.7559,
+        "sharpness": 452.26,
+        "size": [
+          346,
+          314
+        ]
+      }
+    ],
+    "pig_23": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1005.jpg",
+        "source": "train_img/23/1005.jpg",
+        "split": "train_img",
+        "conf": 0.8457,
+        "sharpness": 336.76,
+        "size": [
+          147,
+          587
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1025.jpg",
+        "source": "train_img/23/1025.jpg",
+        "split": "train_img",
+        "conf": 0.8145,
+        "sharpness": 437.78,
+        "size": [
+          141,
+          611
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1041.jpg",
+        "source": "train_img/23/1041.jpg",
+        "split": "train_img",
+        "conf": 0.7734,
+        "sharpness": 426.02,
+        "size": [
+          135,
+          618
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1053.jpg",
+        "source": "train_img/23/1053.jpg",
+        "split": "train_img",
+        "conf": 0.8174,
+        "sharpness": 403.74,
+        "size": [
+          134,
+          592
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1073.jpg",
+        "source": "train_img/23/1073.jpg",
+        "split": "train_img",
+        "conf": 0.8403,
+        "sharpness": 324.02,
+        "size": [
+          136,
+          593
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1089.jpg",
+        "source": "train_img/23/1089.jpg",
+        "split": "train_img",
+        "conf": 0.8188,
+        "sharpness": 349.06,
+        "size": [
+          138,
+          588
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1109.jpg",
+        "source": "train_img/23/1109.jpg",
+        "split": "train_img",
+        "conf": 0.835,
+        "sharpness": 471.02,
+        "size": [
+          133,
+          654
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1121.jpg",
+        "source": "train_img/23/1121.jpg",
+        "split": "train_img",
+        "conf": 0.8159,
+        "sharpness": 516.97,
+        "size": [
+          134,
+          654
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1129.jpg",
+        "source": "train_img/23/1129.jpg",
+        "split": "train_img",
+        "conf": 0.8452,
+        "sharpness": 556.71,
+        "size": [
+          139,
+          658
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1153.jpg",
+        "source": "train_img/23/1153.jpg",
+        "split": "train_img",
+        "conf": 0.8481,
+        "sharpness": 456.0,
+        "size": [
+          148,
+          658
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1165.jpg",
+        "source": "train_img/23/1165.jpg",
+        "split": "train_img",
+        "conf": 0.8237,
+        "sharpness": 296.45,
+        "size": [
+          145,
+          622
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1177.jpg",
+        "source": "train_img/23/1177.jpg",
+        "split": "train_img",
+        "conf": 0.8452,
+        "sharpness": 362.67,
+        "size": [
+          146,
+          620
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1201.jpg",
+        "source": "train_img/23/1201.jpg",
+        "split": "train_img",
+        "conf": 0.8359,
+        "sharpness": 348.37,
+        "size": [
+          147,
+          605
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1213.jpg",
+        "source": "train_img/23/1213.jpg",
+        "split": "train_img",
+        "conf": 0.8467,
+        "sharpness": 450.22,
+        "size": [
+          147,
+          619
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_23\\train_1397.jpg",
+        "source": "train_img/23/1397.jpg",
+        "split": "train_img",
+        "conf": 0.46,
+        "sharpness": 226.18,
+        "size": [
+          312,
+          326
+        ]
+      }
+    ],
+    "pig_24": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_24\\train_105.jpg",
+        "source": "train_img/24/105.jpg",
+        "split": "train_img",
+        "conf": 0.7642,
+        "sharpness": 323.21,
+        "size": [
+          81,
+          610
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_24\\train_121.jpg",
+        "source": "train_img/24/121.jpg",
+        "split": "train_img",
+        "conf": 0.8315,
+        "sharpness": 498.44,
+        "size": [
+          105,
+          603
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_24\\train_1249.jpg",
+        "source": "train_img/24/1249.jpg",
+        "split": "train_img",
+        "conf": 0.5869,
+        "sharpness": 124.23,
+        "size": [
+          300,
+          401
+        ]
+      }
+    ],
+    "pig_25": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_25\\train_105.jpg",
+        "source": "train_img/25/105.jpg",
+        "split": "train_img",
+        "conf": 0.4736,
+        "sharpness": 1054.96,
+        "size": [
+          94,
+          311
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_25\\train_1201.jpg",
+        "source": "train_img/25/1201.jpg",
+        "split": "train_img",
+        "conf": 0.6533,
+        "sharpness": 152.51,
+        "size": [
+          393,
+          395
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_25\\train_1317.jpg",
+        "source": "train_img/25/1317.jpg",
+        "split": "train_img",
+        "conf": 0.7192,
+        "sharpness": 49.39,
+        "size": [
+          574,
+          430
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_25\\train_1373.jpg",
+        "source": "train_img/25/1373.jpg",
+        "split": "train_img",
+        "conf": 0.4658,
+        "sharpness": 30.2,
+        "size": [
+          529,
+          464
+        ]
+      }
+    ],
+    "pig_26": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_26\\train_105.jpg",
+        "source": "train_img/26/105.jpg",
+        "split": "train_img",
+        "conf": 0.5659,
+        "sharpness": 471.29,
+        "size": [
+          80,
+          611
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_26\\train_121.jpg",
+        "source": "train_img/26/121.jpg",
+        "split": "train_img",
+        "conf": 0.6943,
+        "sharpness": 468.7,
+        "size": [
+          64,
+          671
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_26\\train_101.jpg",
+        "source": "train_img/26/101.jpg",
+        "split": "train_img",
+        "conf": 0.6655,
+        "sharpness": 350.74,
+        "size": [
+          78,
+          606
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_26\\train_109.jpg",
+        "source": "train_img/26/109.jpg",
+        "split": "train_img",
+        "conf": 0.6533,
+        "sharpness": 478.97,
+        "size": [
+          84,
+          547
+        ]
+      }
+    ],
+    "pig_27": [],
+    "pig_28": [],
+    "pig_29": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_29\\train_121.jpg",
+        "source": "train_img/29/121.jpg",
+        "split": "train_img",
+        "conf": 0.7075,
+        "sharpness": 111.07,
+        "size": [
+          204,
+          264
+        ]
+      }
+    ],
+    "pig_30": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1021.jpg",
+        "source": "train_img/30/1021.jpg",
+        "split": "train_img",
+        "conf": 0.4543,
+        "sharpness": 354.42,
+        "size": [
+          310,
+          335
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1033.jpg",
+        "source": "train_img/30/1033.jpg",
+        "split": "train_img",
+        "conf": 0.5127,
+        "sharpness": 107.16,
+        "size": [
+          306,
+          337
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1097.jpg",
+        "source": "train_img/30/1097.jpg",
+        "split": "train_img",
+        "conf": 0.5215,
+        "sharpness": 331.84,
+        "size": [
+          313,
+          332
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1225.jpg",
+        "source": "train_img/30/1225.jpg",
+        "split": "train_img",
+        "conf": 0.6548,
+        "sharpness": 305.88,
+        "size": [
+          320,
+          325
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1241.jpg",
+        "source": "train_img/30/1241.jpg",
+        "split": "train_img",
+        "conf": 0.5459,
+        "sharpness": 322.95,
+        "size": [
+          318,
+          377
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1249.jpg",
+        "source": "train_img/30/1249.jpg",
+        "split": "train_img",
+        "conf": 0.4922,
+        "sharpness": 358.49,
+        "size": [
+          299,
+          339
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1289.jpg",
+        "source": "train_img/30/1289.jpg",
+        "split": "train_img",
+        "conf": 0.6021,
+        "sharpness": 187.39,
+        "size": [
+          292,
+          321
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1301.jpg",
+        "source": "train_img/30/1301.jpg",
+        "split": "train_img",
+        "conf": 0.4873,
+        "sharpness": 806.35,
+        "size": [
+          298,
+          337
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1341.jpg",
+        "source": "train_img/30/1341.jpg",
+        "split": "train_img",
+        "conf": 0.7168,
+        "sharpness": 272.34,
+        "size": [
+          276,
+          365
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1353.jpg",
+        "source": "train_img/30/1353.jpg",
+        "split": "train_img",
+        "conf": 0.5059,
+        "sharpness": 648.76,
+        "size": [
+          320,
+          355
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\gallery\\pig_30\\train_1369.jpg",
+        "source": "train_img/30/1369.jpg",
+        "split": "train_img",
+        "conf": 0.585,
+        "sharpness": 470.88,
+        "size": [
+          308,
+          365
+        ]
+      }
+    ]
+  },
+  "query": {
+    "pig_1": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_1\\test_738.jpg",
+        "source": "test_img/1/738.jpg",
+        "split": "test_img",
+        "conf": 0.6704,
+        "sharpness": 49.19,
+        "size": [
+          402,
+          298
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_1\\test_858.jpg",
+        "source": "test_img/1/858.jpg",
+        "split": "test_img",
+        "conf": 0.4902,
+        "sharpness": 59.88,
+        "size": [
+          604,
+          380
+        ]
+      }
+    ],
+    "pig_2": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_2\\test_1248.jpg",
+        "source": "test_img/2/1248.jpg",
+        "split": "test_img",
+        "conf": 0.458,
+        "sharpness": 44.72,
+        "size": [
+          570,
+          292
+        ]
+      }
+    ],
+    "pig_3": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_3\\val_2153.jpg",
+        "source": "val_img/3/2153.jpg",
+        "split": "val_img",
+        "conf": 0.71,
+        "sharpness": 234.96,
+        "size": [
+          208,
+          456
+        ]
+      }
+    ],
+    "pig_4": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1070.jpg",
+        "source": "test_img/4/1070.jpg",
+        "split": "test_img",
+        "conf": 0.6665,
+        "sharpness": 205.51,
+        "size": [
+          430,
+          416
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1220.jpg",
+        "source": "test_img/4/1220.jpg",
+        "split": "test_img",
+        "conf": 0.7422,
+        "sharpness": 252.36,
+        "size": [
+          493,
+          555
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1250.jpg",
+        "source": "test_img/4/1250.jpg",
+        "split": "test_img",
+        "conf": 0.5688,
+        "sharpness": 149.28,
+        "size": [
+          144,
+          539
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1280.jpg",
+        "source": "test_img/4/1280.jpg",
+        "split": "test_img",
+        "conf": 0.5068,
+        "sharpness": 358.92,
+        "size": [
+          367,
+          454
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1310.jpg",
+        "source": "test_img/4/1310.jpg",
+        "split": "test_img",
+        "conf": 0.4775,
+        "sharpness": 40.15,
+        "size": [
+          133,
+          542
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_4\\test_1400.jpg",
+        "source": "test_img/4/1400.jpg",
+        "split": "test_img",
+        "conf": 0.6123,
+        "sharpness": 168.04,
+        "size": [
+          438,
+          467
+        ]
+      }
+    ],
+    "pig_5": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_5\\test_322.jpg",
+        "source": "test_img/5/322.jpg",
+        "split": "test_img",
+        "conf": 0.7017,
+        "sharpness": 59.18,
+        "size": [
+          613,
+          472
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_5\\val_9.jpg",
+        "source": "val_img/5/9.jpg",
+        "split": "val_img",
+        "conf": 0.7886,
+        "sharpness": 78.31,
+        "size": [
+          86,
+          446
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_5\\val_1617.jpg",
+        "source": "val_img/5/1617.jpg",
+        "split": "val_img",
+        "conf": 0.7598,
+        "sharpness": 1041.33,
+        "size": [
+          402,
+          455
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_5\\val_1713.jpg",
+        "source": "val_img/5/1713.jpg",
+        "split": "val_img",
+        "conf": 0.5361,
+        "sharpness": 527.82,
+        "size": [
+          311,
+          464
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_5\\val_2813.jpg",
+        "source": "val_img/5/2813.jpg",
+        "split": "val_img",
+        "conf": 0.6104,
+        "sharpness": 188.44,
+        "size": [
+          280,
+          223
+        ]
+      }
+    ],
+    "pig_6": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_6\\test_892.jpg",
+        "source": "test_img/6/892.jpg",
+        "split": "test_img",
+        "conf": 0.6899,
+        "sharpness": 293.12,
+        "size": [
+          162,
+          424
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_6\\test_982.jpg",
+        "source": "test_img/6/982.jpg",
+        "split": "test_img",
+        "conf": 0.7852,
+        "sharpness": 251.94,
+        "size": [
+          107,
+          562
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_6\\test_1012.jpg",
+        "source": "test_img/6/1012.jpg",
+        "split": "test_img",
+        "conf": 0.6958,
+        "sharpness": 274.52,
+        "size": [
+          112,
+          569
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_6\\test_1282.jpg",
+        "source": "test_img/6/1282.jpg",
+        "split": "test_img",
+        "conf": 0.5767,
+        "sharpness": 239.63,
+        "size": [
+          96,
+          542
+        ]
+      }
+    ],
+    "pig_7": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_7\\test_414.jpg",
+        "source": "test_img/7/414.jpg",
+        "split": "test_img",
+        "conf": 0.4619,
+        "sharpness": 551.38,
+        "size": [
+          354,
+          511
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_7\\test_564.jpg",
+        "source": "test_img/7/564.jpg",
+        "split": "test_img",
+        "conf": 0.7227,
+        "sharpness": 107.78,
+        "size": [
+          139,
+          452
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_7\\test_594.jpg",
+        "source": "test_img/7/594.jpg",
+        "split": "test_img",
+        "conf": 0.7612,
+        "sharpness": 72.68,
+        "size": [
+          135,
+          253
+        ]
+      }
+    ],
+    "pig_8": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_8\\test_1044.jpg",
+        "source": "test_img/8/1044.jpg",
+        "split": "test_img",
+        "conf": 0.4922,
+        "sharpness": 600.75,
+        "size": [
+          351,
+          303
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_8\\val_1845.jpg",
+        "source": "val_img/8/1845.jpg",
+        "split": "val_img",
+        "conf": 0.5591,
+        "sharpness": 109.79,
+        "size": [
+          165,
+          474
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_8\\val_1933.jpg",
+        "source": "val_img/8/1933.jpg",
+        "split": "val_img",
+        "conf": 0.6333,
+        "sharpness": 560.97,
+        "size": [
+          79,
+          462
+        ]
+      }
+    ],
+    "pig_9": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\test_326.jpg",
+        "source": "test_img/9/326.jpg",
+        "split": "test_img",
+        "conf": 0.6406,
+        "sharpness": 308.4,
+        "size": [
+          339,
+          315
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\test_506.jpg",
+        "source": "test_img/9/506.jpg",
+        "split": "test_img",
+        "conf": 0.458,
+        "sharpness": 279.49,
+        "size": [
+          264,
+          277
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\val_1185.jpg",
+        "source": "val_img/9/1185.jpg",
+        "split": "val_img",
+        "conf": 0.6196,
+        "sharpness": 416.69,
+        "size": [
+          304,
+          223
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\val_1845.jpg",
+        "source": "val_img/9/1845.jpg",
+        "split": "val_img",
+        "conf": 0.7363,
+        "sharpness": 401.47,
+        "size": [
+          316,
+          354
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\val_1933.jpg",
+        "source": "val_img/9/1933.jpg",
+        "split": "val_img",
+        "conf": 0.4678,
+        "sharpness": 89.48,
+        "size": [
+          347,
+          327
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_9\\val_2373.jpg",
+        "source": "val_img/9/2373.jpg",
+        "split": "val_img",
+        "conf": 0.6909,
+        "sharpness": 188.6,
+        "size": [
+          127,
+          503
+        ]
+      }
+    ],
+    "pig_10": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_10\\test_926.jpg",
+        "source": "test_img/10/926.jpg",
+        "split": "test_img",
+        "conf": 0.6069,
+        "sharpness": 565.17,
+        "size": [
+          314,
+          267
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_10\\test_956.jpg",
+        "source": "test_img/10/956.jpg",
+        "split": "test_img",
+        "conf": 0.6235,
+        "sharpness": 203.74,
+        "size": [
+          313,
+          311
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_10\\test_986.jpg",
+        "source": "test_img/10/986.jpg",
+        "split": "test_img",
+        "conf": 0.7471,
+        "sharpness": 364.98,
+        "size": [
+          328,
+          334
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_10\\test_1196.jpg",
+        "source": "test_img/10/1196.jpg",
+        "split": "test_img",
+        "conf": 0.7407,
+        "sharpness": 278.89,
+        "size": [
+          410,
+          350
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_10\\test_1226.jpg",
+        "source": "test_img/10/1226.jpg",
+        "split": "test_img",
+        "conf": 0.6396,
+        "sharpness": 171.91,
+        "size": [
+          116,
+          423
+        ]
+      }
+    ],
+    "pig_11": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_328.jpg",
+        "source": "test_img/11/328.jpg",
+        "split": "test_img",
+        "conf": 0.8115,
+        "sharpness": 624.23,
+        "size": [
+          69,
+          556
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_358.jpg",
+        "source": "test_img/11/358.jpg",
+        "split": "test_img",
+        "conf": 0.8286,
+        "sharpness": 228.35,
+        "size": [
+          85,
+          601
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_388.jpg",
+        "source": "test_img/11/388.jpg",
+        "split": "test_img",
+        "conf": 0.854,
+        "sharpness": 244.18,
+        "size": [
+          127,
+          403
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_418.jpg",
+        "source": "test_img/11/418.jpg",
+        "split": "test_img",
+        "conf": 0.8262,
+        "sharpness": 370.2,
+        "size": [
+          111,
+          493
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_448.jpg",
+        "source": "test_img/11/448.jpg",
+        "split": "test_img",
+        "conf": 0.7734,
+        "sharpness": 611.74,
+        "size": [
+          75,
+          483
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_478.jpg",
+        "source": "test_img/11/478.jpg",
+        "split": "test_img",
+        "conf": 0.6885,
+        "sharpness": 675.86,
+        "size": [
+          74,
+          445
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_508.jpg",
+        "source": "test_img/11/508.jpg",
+        "split": "test_img",
+        "conf": 0.8267,
+        "sharpness": 494.6,
+        "size": [
+          135,
+          454
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_538.jpg",
+        "source": "test_img/11/538.jpg",
+        "split": "test_img",
+        "conf": 0.5566,
+        "sharpness": 323.14,
+        "size": [
+          177,
+          458
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_568.jpg",
+        "source": "test_img/11/568.jpg",
+        "split": "test_img",
+        "conf": 0.5659,
+        "sharpness": 260.59,
+        "size": [
+          126,
+          405
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_11\\test_598.jpg",
+        "source": "test_img/11/598.jpg",
+        "split": "test_img",
+        "conf": 0.5107,
+        "sharpness": 242.66,
+        "size": [
+          133,
+          447
+        ]
+      }
+    ],
+    "pig_12": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_12\\test_1018.jpg",
+        "source": "test_img/12/1018.jpg",
+        "split": "test_img",
+        "conf": 0.7124,
+        "sharpness": 121.16,
+        "size": [
+          120,
+          273
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_12\\test_1048.jpg",
+        "source": "test_img/12/1048.jpg",
+        "split": "test_img",
+        "conf": 0.6426,
+        "sharpness": 122.32,
+        "size": [
+          108,
+          292
+        ]
+      }
+    ],
+    "pig_13": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_13\\test_450.jpg",
+        "source": "test_img/13/450.jpg",
+        "split": "test_img",
+        "conf": 0.6001,
+        "sharpness": 513.66,
+        "size": [
+          294,
+          281
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_13\\test_780.jpg",
+        "source": "test_img/13/780.jpg",
+        "split": "test_img",
+        "conf": 0.4805,
+        "sharpness": 329.15,
+        "size": [
+          302,
+          302
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_13\\val_1617.jpg",
+        "source": "val_img/13/1617.jpg",
+        "split": "val_img",
+        "conf": 0.4534,
+        "sharpness": 606.03,
+        "size": [
+          80,
+          449
+        ]
+      }
+    ],
+    "pig_14": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_14\\test_1440.jpg",
+        "source": "test_img/14/1440.jpg",
+        "split": "test_img",
+        "conf": 0.7822,
+        "sharpness": 468.34,
+        "size": [
+          104,
+          595
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_14\\test_1470.jpg",
+        "source": "test_img/14/1470.jpg",
+        "split": "test_img",
+        "conf": 0.5591,
+        "sharpness": 212.55,
+        "size": [
+          184,
+          433
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_14\\val_917.jpg",
+        "source": "val_img/14/917.jpg",
+        "split": "val_img",
+        "conf": 0.6177,
+        "sharpness": 48.45,
+        "size": [
+          529,
+          457
+        ]
+      }
+    ],
+    "pig_15": [],
+    "pig_16": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_932.jpg",
+        "source": "test_img/16/932.jpg",
+        "split": "test_img",
+        "conf": 0.5757,
+        "sharpness": 648.55,
+        "size": [
+          363,
+          361
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_962.jpg",
+        "source": "test_img/16/962.jpg",
+        "split": "test_img",
+        "conf": 0.7861,
+        "sharpness": 661.41,
+        "size": [
+          370,
+          353
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_992.jpg",
+        "source": "test_img/16/992.jpg",
+        "split": "test_img",
+        "conf": 0.6748,
+        "sharpness": 726.64,
+        "size": [
+          373,
+          376
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1022.jpg",
+        "source": "test_img/16/1022.jpg",
+        "split": "test_img",
+        "conf": 0.5479,
+        "sharpness": 722.45,
+        "size": [
+          349,
+          363
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1082.jpg",
+        "source": "test_img/16/1082.jpg",
+        "split": "test_img",
+        "conf": 0.5068,
+        "sharpness": 667.89,
+        "size": [
+          384,
+          368
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1112.jpg",
+        "source": "test_img/16/1112.jpg",
+        "split": "test_img",
+        "conf": 0.7002,
+        "sharpness": 407.03,
+        "size": [
+          363,
+          355
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1142.jpg",
+        "source": "test_img/16/1142.jpg",
+        "split": "test_img",
+        "conf": 0.769,
+        "sharpness": 538.4,
+        "size": [
+          371,
+          299
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1172.jpg",
+        "source": "test_img/16/1172.jpg",
+        "split": "test_img",
+        "conf": 0.749,
+        "sharpness": 453.07,
+        "size": [
+          323,
+          270
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1202.jpg",
+        "source": "test_img/16/1202.jpg",
+        "split": "test_img",
+        "conf": 0.7969,
+        "sharpness": 331.8,
+        "size": [
+          416,
+          311
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1442.jpg",
+        "source": "test_img/16/1442.jpg",
+        "split": "test_img",
+        "conf": 0.6167,
+        "sharpness": 516.62,
+        "size": [
+          414,
+          324
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_16\\test_1472.jpg",
+        "source": "test_img/16/1472.jpg",
+        "split": "test_img",
+        "conf": 0.6143,
+        "sharpness": 82.48,
+        "size": [
+          390,
+          359
+        ]
+      }
+    ],
+    "pig_17": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_17\\test_664.jpg",
+        "source": "test_img/17/664.jpg",
+        "split": "test_img",
+        "conf": 0.6074,
+        "sharpness": 433.43,
+        "size": [
+          421,
+          461
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_17\\val_649.jpg",
+        "source": "val_img/17/649.jpg",
+        "split": "val_img",
+        "conf": 0.5757,
+        "sharpness": 220.25,
+        "size": [
+          394,
+          422
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_17\\val_1845.jpg",
+        "source": "val_img/17/1845.jpg",
+        "split": "val_img",
+        "conf": 0.5698,
+        "sharpness": 674.03,
+        "size": [
+          288,
+          227
+        ]
+      }
+    ],
+    "pig_18": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_18\\test_1384.jpg",
+        "source": "test_img/18/1384.jpg",
+        "split": "test_img",
+        "conf": 0.8081,
+        "sharpness": 64.63,
+        "size": [
+          294,
+          328
+        ]
+      }
+    ],
+    "pig_19": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\test_786.jpg",
+        "source": "test_img/19/786.jpg",
+        "split": "test_img",
+        "conf": 0.5728,
+        "sharpness": 494.98,
+        "size": [
+          88,
+          527
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\test_846.jpg",
+        "source": "test_img/19/846.jpg",
+        "split": "test_img",
+        "conf": 0.7305,
+        "sharpness": 34.2,
+        "size": [
+          373,
+          384
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_1461.jpg",
+        "source": "val_img/19/1461.jpg",
+        "split": "val_img",
+        "conf": 0.5156,
+        "sharpness": 482.95,
+        "size": [
+          332,
+          333
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_1617.jpg",
+        "source": "val_img/19/1617.jpg",
+        "split": "val_img",
+        "conf": 0.8701,
+        "sharpness": 418.89,
+        "size": [
+          393,
+          383
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_1713.jpg",
+        "source": "val_img/19/1713.jpg",
+        "split": "val_img",
+        "conf": 0.8394,
+        "sharpness": 391.62,
+        "size": [
+          332,
+          361
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_2505.jpg",
+        "source": "val_img/19/2505.jpg",
+        "split": "val_img",
+        "conf": 0.5972,
+        "sharpness": 135.48,
+        "size": [
+          333,
+          341
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_2593.jpg",
+        "source": "val_img/19/2593.jpg",
+        "split": "val_img",
+        "conf": 0.752,
+        "sharpness": 63.3,
+        "size": [
+          353,
+          300
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_2725.jpg",
+        "source": "val_img/19/2725.jpg",
+        "split": "val_img",
+        "conf": 0.792,
+        "sharpness": 299.13,
+        "size": [
+          126,
+          419
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_2813.jpg",
+        "source": "val_img/19/2813.jpg",
+        "split": "val_img",
+        "conf": 0.5039,
+        "sharpness": 237.1,
+        "size": [
+          355,
+          367
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_19\\val_2945.jpg",
+        "source": "val_img/19/2945.jpg",
+        "split": "val_img",
+        "conf": 0.6665,
+        "sharpness": 115.79,
+        "size": [
+          268,
+          343
+        ]
+      }
+    ],
+    "pig_20": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\test_1236.jpg",
+        "source": "test_img/20/1236.jpg",
+        "split": "test_img",
+        "conf": 0.4873,
+        "sharpness": 211.15,
+        "size": [
+          252,
+          320
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_1617.jpg",
+        "source": "val_img/20/1617.jpg",
+        "split": "val_img",
+        "conf": 0.7983,
+        "sharpness": 166.14,
+        "size": [
+          367,
+          323
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_1713.jpg",
+        "source": "val_img/20/1713.jpg",
+        "split": "val_img",
+        "conf": 0.4932,
+        "sharpness": 91.94,
+        "size": [
+          375,
+          329
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_1845.jpg",
+        "source": "val_img/20/1845.jpg",
+        "split": "val_img",
+        "conf": 0.7163,
+        "sharpness": 402.23,
+        "size": [
+          294,
+          305
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_1933.jpg",
+        "source": "val_img/20/1933.jpg",
+        "split": "val_img",
+        "conf": 0.6426,
+        "sharpness": 443.44,
+        "size": [
+          327,
+          323
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2065.jpg",
+        "source": "val_img/20/2065.jpg",
+        "split": "val_img",
+        "conf": 0.7676,
+        "sharpness": 245.64,
+        "size": [
+          325,
+          310
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2153.jpg",
+        "source": "val_img/20/2153.jpg",
+        "split": "val_img",
+        "conf": 0.71,
+        "sharpness": 125.79,
+        "size": [
+          330,
+          308
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2285.jpg",
+        "source": "val_img/20/2285.jpg",
+        "split": "val_img",
+        "conf": 0.6406,
+        "sharpness": 163.51,
+        "size": [
+          338,
+          317
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2373.jpg",
+        "source": "val_img/20/2373.jpg",
+        "split": "val_img",
+        "conf": 0.5498,
+        "sharpness": 392.55,
+        "size": [
+          292,
+          317
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2505.jpg",
+        "source": "val_img/20/2505.jpg",
+        "split": "val_img",
+        "conf": 0.8564,
+        "sharpness": 326.59,
+        "size": [
+          326,
+          283
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_20\\val_2945.jpg",
+        "source": "val_img/20/2945.jpg",
+        "split": "val_img",
+        "conf": 0.5547,
+        "sharpness": 569.39,
+        "size": [
+          266,
+          319
+        ]
+      }
+    ],
+    "pig_21": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_21\\test_458.jpg",
+        "source": "test_img/21/458.jpg",
+        "split": "test_img",
+        "conf": 0.5708,
+        "sharpness": 61.91,
+        "size": [
+          404,
+          522
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_21\\test_818.jpg",
+        "source": "test_img/21/818.jpg",
+        "split": "test_img",
+        "conf": 0.5571,
+        "sharpness": 210.96,
+        "size": [
+          297,
+          354
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_21\\val_113.jpg",
+        "source": "val_img/21/113.jpg",
+        "split": "val_img",
+        "conf": 0.4688,
+        "sharpness": 299.65,
+        "size": [
+          327,
+          395
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_21\\val_813.jpg",
+        "source": "val_img/21/813.jpg",
+        "split": "val_img",
+        "conf": 0.5679,
+        "sharpness": 207.63,
+        "size": [
+          275,
+          336
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_21\\val_2505.jpg",
+        "source": "val_img/21/2505.jpg",
+        "split": "val_img",
+        "conf": 0.6479,
+        "sharpness": 112.29,
+        "size": [
+          286,
+          282
+        ]
+      }
+    ],
+    "pig_22": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_22\\test_1448.jpg",
+        "source": "test_img/22/1448.jpg",
+        "split": "test_img",
+        "conf": 0.5283,
+        "sharpness": 482.14,
+        "size": [
+          344,
+          295
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_22\\test_1478.jpg",
+        "source": "test_img/22/1478.jpg",
+        "split": "test_img",
+        "conf": 0.7812,
+        "sharpness": 512.32,
+        "size": [
+          342,
+          317
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_22\\val_1461.jpg",
+        "source": "val_img/22/1461.jpg",
+        "split": "val_img",
+        "conf": 0.8477,
+        "sharpness": 465.36,
+        "size": [
+          364,
+          305
+        ]
+      }
+    ],
+    "pig_23": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_490.jpg",
+        "source": "test_img/23/490.jpg",
+        "split": "test_img",
+        "conf": 0.7007,
+        "sharpness": 474.98,
+        "size": [
+          151,
+          534
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_520.jpg",
+        "source": "test_img/23/520.jpg",
+        "split": "test_img",
+        "conf": 0.5879,
+        "sharpness": 527.27,
+        "size": [
+          172,
+          532
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_580.jpg",
+        "source": "test_img/23/580.jpg",
+        "split": "test_img",
+        "conf": 0.7031,
+        "sharpness": 478.07,
+        "size": [
+          149,
+          501
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_670.jpg",
+        "source": "test_img/23/670.jpg",
+        "split": "test_img",
+        "conf": 0.813,
+        "sharpness": 575.05,
+        "size": [
+          117,
+          552
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_760.jpg",
+        "source": "test_img/23/760.jpg",
+        "split": "test_img",
+        "conf": 0.4688,
+        "sharpness": 422.59,
+        "size": [
+          318,
+          366
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_23\\test_850.jpg",
+        "source": "test_img/23/850.jpg",
+        "split": "test_img",
+        "conf": 0.5991,
+        "sharpness": 221.47,
+        "size": [
+          164,
+          581
+        ]
+      }
+    ],
+    "pig_24": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\test_910.jpg",
+        "source": "test_img/24/910.jpg",
+        "split": "test_img",
+        "conf": 0.6768,
+        "sharpness": 38.09,
+        "size": [
+          477,
+          641
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\val_113.jpg",
+        "source": "val_img/24/113.jpg",
+        "split": "val_img",
+        "conf": 0.811,
+        "sharpness": 494.35,
+        "size": [
+          119,
+          568
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\val_545.jpg",
+        "source": "val_img/24/545.jpg",
+        "split": "val_img",
+        "conf": 0.6372,
+        "sharpness": 342.55,
+        "size": [
+          194,
+          517
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\val_649.jpg",
+        "source": "val_img/24/649.jpg",
+        "split": "val_img",
+        "conf": 0.4863,
+        "sharpness": 272.68,
+        "size": [
+          174,
+          453
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\val_917.jpg",
+        "source": "val_img/24/917.jpg",
+        "split": "val_img",
+        "conf": 0.5264,
+        "sharpness": 78.5,
+        "size": [
+          446,
+          695
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_24\\val_2373.jpg",
+        "source": "val_img/24/2373.jpg",
+        "split": "val_img",
+        "conf": 0.4639,
+        "sharpness": 199.35,
+        "size": [
+          268,
+          337
+        ]
+      }
+    ],
+    "pig_25": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_25\\test_432.jpg",
+        "source": "test_img/25/432.jpg",
+        "split": "test_img",
+        "conf": 0.4707,
+        "sharpness": 96.19,
+        "size": [
+          262,
+          498
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_25\\test_612.jpg",
+        "source": "test_img/25/612.jpg",
+        "split": "test_img",
+        "conf": 0.4941,
+        "sharpness": 129.16,
+        "size": [
+          142,
+          654
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_25\\val_2725.jpg",
+        "source": "val_img/25/2725.jpg",
+        "split": "val_img",
+        "conf": 0.5059,
+        "sharpness": 1089.24,
+        "size": [
+          345,
+          357
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_25\\val_2945.jpg",
+        "source": "val_img/25/2945.jpg",
+        "split": "val_img",
+        "conf": 0.8618,
+        "sharpness": 594.04,
+        "size": [
+          431,
+          388
+        ]
+      }
+    ],
+    "pig_26": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_26\\test_1062.jpg",
+        "source": "test_img/26/1062.jpg",
+        "split": "test_img",
+        "conf": 0.5518,
+        "sharpness": 235.47,
+        "size": [
+          271,
+          228
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_26\\val_113.jpg",
+        "source": "val_img/26/113.jpg",
+        "split": "val_img",
+        "conf": 0.5127,
+        "sharpness": 368.47,
+        "size": [
+          90,
+          226
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_26\\val_1081.jpg",
+        "source": "val_img/26/1081.jpg",
+        "split": "val_img",
+        "conf": 0.459,
+        "sharpness": 259.5,
+        "size": [
+          226,
+          214
+        ]
+      }
+    ],
+    "pig_27": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_27\\val_2505.jpg",
+        "source": "val_img/27/2505.jpg",
+        "split": "val_img",
+        "conf": 0.4524,
+        "sharpness": 224.57,
+        "size": [
+          459,
+          522
+        ]
+      }
+    ],
+    "pig_28": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\test_1454.jpg",
+        "source": "test_img/28/1454.jpg",
+        "split": "test_img",
+        "conf": 0.5361,
+        "sharpness": 71.17,
+        "size": [
+          456,
+          347
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\val_381.jpg",
+        "source": "val_img/28/381.jpg",
+        "split": "val_img",
+        "conf": 0.5669,
+        "sharpness": 38.36,
+        "size": [
+          224,
+          273
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\val_1933.jpg",
+        "source": "val_img/28/1933.jpg",
+        "split": "val_img",
+        "conf": 0.4668,
+        "sharpness": 280.13,
+        "size": [
+          369,
+          322
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\val_2065.jpg",
+        "source": "val_img/28/2065.jpg",
+        "split": "val_img",
+        "conf": 0.7007,
+        "sharpness": 708.18,
+        "size": [
+          310,
+          338
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\val_2285.jpg",
+        "source": "val_img/28/2285.jpg",
+        "split": "val_img",
+        "conf": 0.8628,
+        "sharpness": 758.71,
+        "size": [
+          364,
+          317
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_28\\val_2373.jpg",
+        "source": "val_img/28/2373.jpg",
+        "split": "val_img",
+        "conf": 0.7148,
+        "sharpness": 262.49,
+        "size": [
+          338,
+          336
+        ]
+      }
+    ],
+    "pig_29": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_29\\test_586.jpg",
+        "source": "test_img/29/586.jpg",
+        "split": "test_img",
+        "conf": 0.8057,
+        "sharpness": 103.31,
+        "size": [
+          756,
+          689
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_29\\test_646.jpg",
+        "source": "test_img/29/646.jpg",
+        "split": "test_img",
+        "conf": 0.4834,
+        "sharpness": 54.65,
+        "size": [
+          776,
+          606
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_29\\val_1845.jpg",
+        "source": "val_img/29/1845.jpg",
+        "split": "val_img",
+        "conf": 0.6636,
+        "sharpness": 147.72,
+        "size": [
+          393,
+          421
+        ]
+      }
+    ],
+    "pig_30": [
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_30\\test_1066.jpg",
+        "source": "test_img/30/1066.jpg",
+        "split": "test_img",
+        "conf": 0.4707,
+        "sharpness": 335.51,
+        "size": [
+          321,
+          353
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_30\\test_1096.jpg",
+        "source": "test_img/30/1096.jpg",
+        "split": "test_img",
+        "conf": 0.582,
+        "sharpness": 338.62,
+        "size": [
+          312,
+          339
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_30\\test_1276.jpg",
+        "source": "test_img/30/1276.jpg",
+        "split": "test_img",
+        "conf": 0.5601,
+        "sharpness": 329.58,
+        "size": [
+          320,
+          323
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_30\\test_1366.jpg",
+        "source": "test_img/30/1366.jpg",
+        "split": "test_img",
+        "conf": 0.7017,
+        "sharpness": 611.09,
+        "size": [
+          316,
+          361
+        ]
+      },
+      {
+        "path": "C:\\Users\\User\\Desktop\\final_pig_v0\\external_test_datasets\\shaojiang_pig_faces\\query\\pig_30\\test_1426.jpg",
+        "source": "test_img/30/1426.jpg",
+        "split": "test_img",
+        "conf": 0.603,
+        "sharpness": 298.19,
+        "size": [
+          288,
+          324
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "scanned_frames": 2690,
+    "valid_crops": 282
+  }
+}

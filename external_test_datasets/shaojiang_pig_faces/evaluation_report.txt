@@ -1,0 +1,70 @@
+================================================================================
+External Pig Face Recognition Evaluation Report
+================================================================================
+Dataset Source     : Hugging Face `shaojiang/pig-images` (30 individuals, openrail license)
+Face Detector      : C:\Users\User\Desktop\final_pig_v0\v4\parameters\nose_eyes_face_0817.pt (cls='face', conf>=0.45, min_size=60px, min_laplacian=25.0)
+Re-ID Model        : C:\Users\User\Desktop\final_pig_v0\v4\parameters\pig_ecb_best.pth (ECBHybridModel ResNet18 inference branch, classes=17)
+Device / Precision : cuda (FP16)
+
+--- 1. Dataset Extraction Summary ---
+Total frames scanned     : 2690
+Total valid face crops   : 282 (Gallery=150 from train_img, Query=132 from test_img/val_img)
+Qualified test pigs      : 17 pigs (each >= 3 gallery crops & >= 3 query crops)
+Qualified crop counts    : Gallery=132 (all from train_img), Query=95 (65 from test_img, 30 from val_img)
+
+--- 2. Evaluation A: Open-Set Unknown Rejection (17 Known Training Classes vs External Unseen Pigs) ---
+All external face crops tested : 282
+Max Softmax Prob (Mean / Med)  : 0.2850 / 0.2681
+Max Softmax Prob (P90 / Max)   : 0.4282 / 0.8035
+At conf_threshold = 0.65 (v4)  : False Accept Rate (FAR) = 1.06% | True Rejection Rate (TRR) = 98.94%
+At conf_threshold = 0.50 (pkg) : False Accept Rate (FAR) = 4.61% | True Rejection Rate (TRR) = 95.39%
+
+--- 3. Evaluation B: Open-Set Re-ID Generalization (Unseen Pigs Registered -> Matched on Query) ---
+Number of unseen gallery IDs   : 17
+Total query crops evaluated    : 95
+[Mode 1] Top-5 Sharpness Centroid (matches v4 target_shots=5):
+  Rank-1 (Top-1) Accuracy      : 53.68% (51/95)
+  Rank-3 (Top-3) Accuracy      : 71.58% (68/95)
+[Mode 2] All-Gallery Centroid:
+  Rank-1 (Top-1) Accuracy      : 66.32% (63/95)
+  Rank-3 (Top-3) Accuracy      : 74.74% (71/95)
+[Mode 3] 1-NN Individual Gallery Shot Matching:
+  Rank-1 (Top-1) Accuracy      : 68.42% (65/95)
+  Rank-3 (Top-3) Accuracy      : 76.84% (73/95)
+
+--- 4. Cosine Similarity & Threshold Verification (Query vs Top-5 Centroid) ---
+Same-Pig (Intra-class) Sim     : 0.8972 +- 0.0663 (min=0.6790, max=0.9934)
+Diff-Pig (Inter-class) Sim     : 0.8119 +- 0.0699 (min=0.5790, max=0.9522)
+ROC-AUC                        : 0.8289
+Equal Error Rate (EER)         : 22.17% (at threshold = 0.8711)
+Youden Optimal Threshold       : 0.8878
+At sim_threshold = 0.82 (v4)   : TPR (Recall) = 85.26% | FPR = 52.30%
+At sim_threshold = 0.75 (pkg)  : TPR (Recall) = 95.79% | FPR = 80.00%
+
+--- 5. Pairwise Verification (Query vs Individual Gallery Shots) ---
+Same-Pig Shot Sim              : 0.8761 +- 0.0861
+Diff-Pig Shot Sim              : 0.7736 +- 0.0742
+Shot-to-Shot ROC-AUC / EER     : 0.8224 / 26.05% (thresh=0.8289)
+Shot-to-Shot @0.82             : TPR = 77.17% | FPR = 30.21%
+
+--- 6. Per-Pig Rank-1 Breakdown (Top-5 Sharpness Centroid) ---
+Pig ID     | Gallery | Query |     Top-1 |     Top-3 | Rank-1 Acc
+-----------------------------------------------------------------
+pig_4      |      11 |     6 |    3/6    |    3/6    |     50.00%
+pig_5      |       5 |     5 |    2/5    |    4/5    |     40.00%
+pig_6      |       3 |     4 |    4/4    |    4/4    |    100.00%
+pig_7      |       7 |     3 |    0/3    |    0/3    |      0.00%
+pig_9      |       3 |     6 |    5/6    |    5/6    |     83.33%
+pig_10     |       3 |     5 |    4/5    |    4/5    |     80.00%
+pig_11     |      27 |    10 |    7/10   |    7/10   |     70.00%
+pig_14     |       7 |     3 |    2/3    |    3/3    |     66.67%
+pig_16     |      17 |    11 |    0/11   |    9/11   |      0.00%
+pig_19     |       4 |    10 |    5/10   |    6/10   |     50.00%
+pig_21     |       4 |     5 |    2/5    |    4/5    |     40.00%
+pig_22     |       4 |     3 |    3/3    |    3/3    |    100.00%
+pig_23     |      15 |     6 |    5/6    |    5/6    |     83.33%
+pig_24     |       3 |     6 |    2/6    |    3/6    |     33.33%
+pig_25     |       4 |     4 |    1/4    |    2/4    |     25.00%
+pig_26     |       4 |     3 |    1/3    |    1/3    |     33.33%
+pig_30     |      11 |     5 |    5/5    |    5/5    |    100.00%
+================================================================================

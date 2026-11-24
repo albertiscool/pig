@@ -1,0 +1,68 @@
+================================================================================
+Clean Landmark-Verified External Pig Face Recognition Evaluation Report
+================================================================================
+Dataset Source     : Hugging Face `shaojiang/pig-images` (external unseen individuals)
+Clean Filter Rule  : (nose_conf>=0.30 OR (eye_conf>=0.30 AND face.pt>=0.45)) on 50%-padded crop
+Excluded Pigs      : ['pig_17', 'pig_4']
+Re-ID Model        : C:\Users\User\Desktop\final_pig_v0\v4\parameters\pig_ecb_best.pth (ECBHybridModel ResNet18 inference branch, classes=17)
+Device / Precision : cuda (FP16)
+
+--- 1. Clean Extraction Summary ---
+Raw YOLO face crops scanned : 260
+All landmark-clean crops    : 102 (Gallery=46, Query=56)
+Primary Re-ID test pigs     : 11 pigs (each >= 1 gallery & >= 1 query crop)
+Primary crop counts         : Gallery=44 (train_img), Query=48 (21 from test_img, 27 from val_img)
+
+--- 2. Evaluation A: Open-Set Unknown Rejection (17 Known Training Classes vs Clean Unseen Pigs) ---
+Clean external face crops   : 102
+Max Softmax Prob (Mean/Med) : 0.3093 / 0.2919
+Max Softmax Prob (P90/Max)  : 0.4268 / 0.5839
+At conf_threshold = 0.65    : False Accept Rate (FAR) = 0.00% | True Rejection Rate (TRR) = 100.00%
+At conf_threshold = 0.50    : False Accept Rate (FAR) = 5.88% | True Rejection Rate (TRR) = 94.12%
+
+--- 3. Evaluation B: Open-Set Re-ID Generalization (Primary Set: >=1 Gallery & >=1 Query) ---
+Unseen gallery IDs          : 11
+Total query crops evaluated : 48
+[Mode 1] Top-5 Sharpness Centroid (matches v4 target_shots=5):
+  Rank-1 (Top-1) Accuracy   : 72.92% (35/48)
+  Rank-3 (Top-3) Accuracy   : 85.42% (41/48)
+[Mode 2] All-Gallery Centroid:
+  Rank-1 (Top-1) Accuracy   : 66.67% (32/48)
+  Rank-3 (Top-3) Accuracy   : 85.42% (41/48)
+[Mode 3] 1-NN Individual Gallery Shot Matching:
+  Rank-1 (Top-1) Accuracy   : 64.58% (31/48)
+  Rank-3 (Top-3) Accuracy   : 85.42% (41/48)
+[Multi-Shot Subset (>=2 Gallery & >=2 Query, 7 pigs, 33 queries)]:
+  Top-5 Centroid Rank-1 / Rank-3 : 78.79% (26/33) | 90.91% (30/33) | AUC=0.8834 | EER=18.18%
+
+--- 4. Cosine Similarity & Threshold Verification (Query vs Top-5 Centroid) ---
+Same-Pig (Intra-class) Sim  : 0.9358 +- 0.0399 (min=0.8339, max=0.9934)
+Diff-Pig (Inter-class) Sim  : 0.8639 +- 0.0371 (min=0.7498, max=0.9407)
+ROC-AUC                     : 0.9024
+Equal Error Rate (EER)      : 17.08% (at threshold = 0.8983)
+Youden Optimal Threshold    : 0.9109
+At sim_threshold = 0.82 (v4): TPR (Recall) = 100.00% | FPR = 87.50%
+At sim_threshold = 0.75(pkg): TPR (Recall) = 100.00% | FPR = 99.79%
+
+--- 5. Pairwise Verification (Query vs Individual Gallery Shots) ---
+Same-Pig Shot Sim           : 0.9399 +- 0.0375
+Diff-Pig Shot Sim           : 0.8596 +- 0.0394
+Shot-to-Shot ROC-AUC / EER  : 0.9329 / 12.70% (thresh=0.9050)
+Shot-to-Shot @0.82          : TPR = 98.77% | FPR = 84.26%
+Shot-to-Shot @0.75          : TPR = 100.00% | FPR = 99.36%
+
+--- 6. Per-Pig Rank-1 Breakdown (Top-5 Sharpness Centroid) ---
+Pig ID     | Gallery | Query |     Top-1 |     Top-3 | Rank-1 Acc
+-----------------------------------------------------------------
+pig_5      |       3 |     3 |    0/3    |    1/3    |      0.00%
+pig_9      |       3 |     5 |    5/5    |    5/5    |    100.00%
+pig_10     |       2 |     1 |    1/1    |    1/1    |    100.00%
+pig_16     |      14 |    11 |   11/11   |   11/11   |    100.00%
+pig_19     |       2 |     8 |    5/8    |    6/8    |     62.50%
+pig_20     |       1 |    11 |    8/11   |   11/11   |     72.73%
+pig_21     |       3 |     2 |    1/2    |    1/2    |     50.00%
+pig_22     |       4 |     2 |    2/2    |    2/2    |    100.00%
+pig_23     |       1 |     1 |    0/1    |    1/1    |      0.00%
+pig_25     |       1 |     2 |    0/2    |    0/2    |      0.00%
+pig_30     |      10 |     2 |    2/2    |    2/2    |    100.00%
+================================================================================

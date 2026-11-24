@@ -1,0 +1,23 @@
+================================================================================
+Before-vs-After Probe on Generated Hard Samples (YOLO + ECBHybridModel FP16)
+================================================================================
+[Sample 1] 295-6 Closed-Set + Fence Occlusion (01_reid_295-6_vertical_fence.png)
+  Original : ReID=295-6 (conf=78.68%, 295-6_prob=78.68%) | YOLO=[('eye', 0.717, [609, 187, 738, 412]), ('face', 0.648, [94, 0, 845, 905]), ('nose', 0.406, [341, 664, 642, 869])]
+  Occluded : ReID=295-6 (conf=63.63%, 295-6_prob=63.63%) | YOLO=[('nose', 0.87, [380, 722, 649, 951]), ('face', 0.605, [52, 0, 741, 1014])]
+  Orig vs Occluded Cosine Similarity : 0.9374
+
+[Sample 2] Full-Frame CCTV YOLO Detection + Fence (02_yolo_fullframe_metal_bars.png)
+  Original (1280x720): YOLO=[('face', 0.897, [449, 0, 1023, 481]), ('nose', 0.866, [687, 331, 865, 475]), ('eye', 0.647, [854, 179, 916, 258]), ('eye', 0.639, [612, 143, 673, 223])]
+  Occluded (1376x768): YOLO=[('nose', 0.787, [727, 352, 862, 507]), ('eye', 0.655, [654, 156, 709, 224]), ('face', 0.505, [533, 0, 1007, 519]), ('eye', 0.48, [915, 189, 966, 266]), ('eye', 0.379, [650, 151, 717, 232])]
+
+[Sample 3] External Unseen pig_16 Open-Set + Angled Rails (03_reid_pig16_angled_rails.png)
+  Orig vs Occluded Cosine Similarity : 0.9294
+  Orig Top-3 Open-Set Match          : [('pig_16', 0.9874), ('pig_30', 0.9326), ('pig_19', 0.8929)]
+  Occluded Top-3 Open-Set Match      : [('pig_16', 0.9312), ('pig_30', 0.9051), ('pig_20', 0.8769)]
+  YOLO Original : []
+  YOLO Occluded : [('nose', 0.779, [150, 187, 230, 300]), ('face', 0.256, [87, 494, 431, 808])]
+
+[Sample 4] YOLO Hard Negative Farm Scene (04_yolo_hard_negative_butt_redboard.png)
+  YOLO detections (default conf>=0.25) : [('nose', 0.447, [612, 255, 730, 427])]
+  YOLO detections (low conf>=0.15)     : [('nose', 0.447)]
+================================================================================
