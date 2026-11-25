@@ -1,0 +1,13 @@
+torch
+torchvision
+ultralytics>=8.3.0
+opencv-python
+numpy
+scipy
+matplotlib
+pillow
+timm
+pyyaml
+scikit-learn
+pandas
+tqdm
