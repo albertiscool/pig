@@ -14,6 +14,9 @@
 | **`v1`** | **特徵比對與資料庫**：ViT (Vision Transformer) 豬隻臉部特徵提取、未知豬隻比對與特徵庫更新。 |
 | **`v2`** | **即時雙鏡頭串流**：RTSP 雙攝影機硬體同步擷取 (`SyncedCapture`)、YOLOv12 即時推論、現場體溫追蹤。 |
 | **`v3`** | **最新版本**：Grounding DINO 零樣本 (Zero-Shot) 自動標註與 NMS 去重、多影片均勻抽樣資料集生成 (`dataset_dino_new`)、YOLO 微調管線 (`run_finetune_yolo.py`)。 |
+| **`v4`** | **共享記憶體與雙光即時監控**：Zero-Copy Shared Memory IPC、ROS 2 Edge 架構與雙光四分割融合系統 (`run_quad_view_unified.py`)。 |
+| **`xavier`** | **Jetson Xavier 邊緣部署最佳化**：NVDEC 硬體 DMA 取流、TensorRT FP16 加速、二階段五官偵測與雙光視差投影。 |
+| **`v5`** | **隔欄抗遮擋強化與輕量 Re-ID**：`YOLO11s-SEAM-EMA + Shape-IoU` 隔欄偵測器 (`19.2 MB`)、P0 抗遮擋 Re-ID (`BNNeck + ArcFace + Triplet + KD`) 與純 CNN 推論權重 (`42.8 MB`)。 |
 
 ---
 
@@ -31,8 +34,17 @@ git checkout v1
 # 切換至 v2
 git checkout v2
 
-# 切換至 v3 (最新自動標註與微調版本)
+# 切換至 v3
 git checkout v3
+
+# 切換至 v4
+git checkout v4
+
+# 切換至 xavier
+git checkout xavier
+
+# 切換至 v5 (最新隔欄抗遮擋偵測 + P0 輕量化 Re-ID)
+git checkout v5
 ```
 
 ---
