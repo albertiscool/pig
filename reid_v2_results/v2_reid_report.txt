@@ -1,0 +1,34 @@
+====================================================================================================================
+Track 1 (v2) Foundation + GeM + SubCenter-AdaArcFace + Anchor-KD Re-ID Full Report (incl. Exp C)
+====================================================================================================================
+Primary v2 Winner (Occlusion & Robustness): v2 DINOv2-S* (Exp B) | FP16=42.11MB (4.36ms)
+Clean Cross-Domain Runner-Up: v2 Frozen-DINOv2+Adapter (Exp C) | FP16=43.24MB (4.35ms)
+MegaDescriptor-T* (Exp A): FP16=54.10MB (7.98ms)
+
+Metric                             |  v0 Base |    v1 P0 |  ZS Mega |  ZS DINO |  ExpA Mg |  ExpB DN |  ExpC Fr
+------------------------------------------------------------------------------------------------------------------
+Closed Clean Acc                   |   98.03% |   95.07% |   86.21% |   91.95% |   93.76% |   94.09% |   93.27%
+Closed Unseen-Fence Acc            |   83.91% |   93.76% |   28.74% |   46.96% |   82.59% |   93.27% |   84.40%
+SJ Clean Top-5 Rank-1              |   72.92% |   60.42% |   77.08% |   75.00% |   54.17% |   64.58% |   81.25%
+SJ Clean ROC-AUC                   |   0.9020 |   0.8383 |   0.9086 |   0.8697 |   0.8789 |   0.8644 |   0.8511
+SJ Clean EER (lower=better)        |   18.23% |   25.00% |   16.67% |   20.62% |   20.52% |   20.62% |   25.21%
+SJ Clean Cos Gap Delta             |  +0.0714 |  +0.2123 |  +0.3141 |  +0.1083 |  +0.3188 |  +0.1754 |  +0.1877
+SJ Occluded Top-5 Rank-1           |   27.08% |   29.17% |   18.75% |   66.67% |   35.42% |   58.33% |   45.83%
+SJ Occluded ROC-AUC                |   0.6932 |   0.7571 |   0.5948 |   0.6931 |   0.7001 |   0.8432 |   0.7325
+SJ Occluded EER (lower=better)     |   39.06% |   32.81% |   43.75% |   35.42% |   35.42% |   25.00% |   31.35%
+Hard Probe 295-6 Fence Prob        |   63.64% |   99.61% |      n/a |      n/a |   99.51% |   99.99% |   94.97%
+Hard Probe pig_16 Rails Margin     |  +0.0255 |  +0.1166 |  +0.1250 |  +0.0809 |  +0.1356 |  +0.1615 |  +0.0983
+
+Max-Cosine Unknown Rejection Sweep (Exp B Winner: v2 DINOv2-S*):
+  cos >= 0.40 -> Known Accept=99.84% | LocalUnk TRR= 3.89% | SJ Unk TRR=63.73%
+  cos >= 0.45 -> Known Accept=99.51% | LocalUnk TRR=11.92% | SJ Unk TRR=81.37%
+  cos >= 0.50 -> Known Accept=99.51% | LocalUnk TRR=34.20% | SJ Unk TRR=93.14%
+  cos >= 0.55 -> Known Accept=98.69% | LocalUnk TRR=62.44% | SJ Unk TRR=98.04%
+  cos >= 0.60 -> Known Accept=97.37% | LocalUnk TRR=85.49% | SJ Unk TRR=100.00%
+Max-Cosine Unknown Rejection Sweep (Exp C Frozen-DINOv2+Adapter):
+  cos >= 0.40 -> Known Accept=100.00% | LocalUnk TRR=52.07% | SJ Unk TRR=45.10%
+  cos >= 0.45 -> Known Accept=99.67% | LocalUnk TRR=72.54% | SJ Unk TRR=66.67%
+  cos >= 0.50 -> Known Accept=99.34% | LocalUnk TRR=87.56% | SJ Unk TRR=83.33%
+  cos >= 0.55 -> Known Accept=98.85% | LocalUnk TRR=92.23% | SJ Unk TRR=93.14%
+  cos >= 0.60 -> Known Accept=97.04% | LocalUnk TRR=95.34% | SJ Unk TRR=98.04%
+====================================================================================================================
