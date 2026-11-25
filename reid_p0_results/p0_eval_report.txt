@@ -1,0 +1,35 @@
+============================================================================================
+P0 Occlusion-Robust Pig Re-ID Evaluation & 3-Way Ablation Report
+============================================================================================
+GPU: NVIDIA GeForce RTX 4090 | Total Elapsed: 2487.8s
+Split: Train=4221, Val=604, Test=609, LocalUnk=386
+Unseen Eval Fence Occlusion: val_occ=24.7%, test_occ=25.0%, sj_occ=26.8%
+
+Metric                                     |     Baseline |  P0-Ablation |      P0-Full
+----------------------------------------------------------------------------------------
+Closed-Set Clean Top-1 Acc                 |       98.03% |       93.92% |       95.07%
+Closed-Set Clean True-Class Conf           |       83.16% |       84.24% |       94.78%
+Closed-Set Unseen-Fence Top-1 Acc          |       83.91% |       93.60% |       93.76%
+Closed-Set Unseen-Fence True-Class Conf    |       49.53% |       78.99% |       92.95%
+Closed-Set Orig-vs-Occ Cosine Sim          |       0.8202 |       0.9284 |       0.8724
+Local Unseen Unknown TRR@0.65 (n=387)      |       97.15% |       99.22% |       33.42%
+SJ Unknown Rejection TRR@0.65 (n=102)      |      100.00% |      100.00% |       36.27%
+SJ Clean Top-5 Centroid Rank-1             |       72.92% |       58.33% |       60.42%
+SJ Clean Top-5 Centroid Rank-3             |       85.42% |       68.75% |       75.00%
+SJ Clean Intra / Inter Cosine              | 0.936/0.864 | 0.930/0.870 | 0.749/0.537
+SJ Clean Separation Gap (Delta)            |      +0.0714 |      +0.0597 |      +0.2123
+SJ Clean ROC-AUC                           |       0.9020 |       0.8354 |       0.8383
+SJ Clean EER (lower=better)                |       18.23% |       23.23% |       25.00%
+SJ Clean Youden Optimal Thresh             |       0.9123 |       0.9088 |       0.7122
+SJ Clean FPR@0.82 (lower=better)           |       88.54% |       92.29% |        1.04%
+SJ Occluded Rank-1 (Unseen Fence)          |       27.08% |       29.17% |       29.17%
+SJ Occluded ROC-AUC                        |       0.6932 |       0.6900 |       0.7571
+SJ Occluded EER (lower=better)             |       39.06% |       37.50% |       32.81%
+Hard Probe 295-6 Fence Prob                |       63.64% |       73.74% |       99.61%
+Hard Probe pig_16 Rails Margin             |      +0.0255 |      +0.0234 |      +0.1166
+
+--- Lightweight CNN-Only Export ---
+Checkpoint Size: 370.17 MB -> 42.75 MB
+Max Embedding Diff vs Full: 0.00e+00 | Max Logit Diff: 0.00e+00
+FP16 Single-Image Latency: Full=2.515 ms | CNN-Only=2.233 ms
+============================================================================================

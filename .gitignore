@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Large media, datasets & temporary runs
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.dav
+*.zip
+*.tar.gz
+*.rar
+*.log
+datasets/
+03_datasets/
+04_videos/
+runs/
+runs_workstation/
+cached_eval_occ/
+output_*/
+output/
+data/
+scratch/
+
+# Large multi-hundred-MB checkpoints & local v4 parameters symlink/junction
+v4/parameters/
+pig_ecb_best.pth
+pig_reid_p0_full_best.pth
+pig_reid_p0_ablation_best.pth

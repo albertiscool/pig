@@ -1,0 +1,75 @@
+================================================================================
+YOLO11s-SEAM-EMA + Shape-IoU (V3) Full Evaluation & Field Video Audit
+================================================================================
+Architecture     : YOLO11s (COCO pretrained) + EMA + SEAM (YOLO-FaceV2) + Shape-IoU (DGS-YOLO)
+V3 Weights       : C:\Users\User\Desktop\final_pig_v0\experiments\yolo11s_seam_ema_v3\runs\yolo11s_seam_ema_v3\weights\best.pt
+GPU Device       : NVIDIA GeForce RTX 5070 Ti Laptop GPU
+Total Elapsed    : 3075.4s
+
+--- 1. V3 Training Dataset Summary (Zero-Leakage) ---
+Train Total      : 5942 imgs (4092 real black + 1000 AI fence @29.9% + 250 white/multi-breed + 600 hard_neg)
+HF UniqueData    : 27 real multi-breed images (+ 27 AI-fence copies)
+Real Neg Source  : 20261110 lab/office/human clips + 103456 zero-pig frames (8x 20261111 farm videos strictly held out!)
+
+--- 2. Benchmark Comparison (Baseline face.pt vs V2 vs V3 YOLO11s-SEAM-EMA) ---
+Benchmark & Metric                   |   Baseline |         V2 |  V3 (Ours) |   V3-Base
+----------------------------------------------------------------------------------------
+Clean Test - Precision               |     99.97% |     99.97% |     99.97% |    -0.00%
+Clean Test - Recall                  |    100.00% |    100.00% |    100.00% |    +0.00%
+Clean Test - mAP@0.5                 |     99.50% |     99.50% |     99.50% |    +0.00%
+Clean Test - mAP@0.5:0.95            |     85.72% |     85.04% |     84.84% |    -0.88%
+----------------------------------------------------------------------------------------
+Occluded Test - Precision            |     25.55% |    100.00% |     97.25% |   +71.71%
+Occluded Test - Recall               |     37.22% |     99.25% |     98.36% |   +61.13%
+Occluded Test - mAP@0.5              |     17.66% |     99.50% |     99.43% |   +81.76%
+Occluded Test - mAP@0.5:0.95         |      5.27% |     61.55% |     68.35% |   +63.08%
+----------------------------------------------------------------------------------------
+Hard-Neg Img FP Rate (conf>=0.25)    |     13.04% |     17.39% |     13.04% |    +0.00%
+Hard-Neg Box FPs (conf>=0.25)        |          5 |          4 |          3 |        -2
+Hard-Neg Img FP Rate (conf>=0.45)    |      8.70% |      4.35% |      4.35% |    -4.35%
+Hard-Neg Box FPs (conf>=0.45)        |          3 |          1 |          1 |        -2
+
+--- 3. Unseen Out-of-Distribution AI Fence Photos (face boxes @ conf>=0.20) ---
+  02_yolo_fullframe_metal_bars.png: Base=[(0.3565, [546, 0, 1042, 680])] | V2=[(0.56, [535, 0, 1009, 606])] | V3=[]
+  01_reid_295-6_vertical_fence.png: Base=[(0.5737, [91, 0, 634, 952])] | V2=[(0.7987, [95, 0, 750, 971])] | V3=[(0.8562, [84, 0, 864, 953])]
+--- Hard Negative FP Details (@0.25) ---
+  V3: {'heldout_ai_right_butt.jpg': [0.264], 'heldout_pig_24_13.jpg': [0.641], 'heldout_pig_24_17.jpg': [0.412]}
+
+--- 4. Held-Out Real Farm Video Audit (8 unseen 20261111 videos, 720 frames @ conf>=0.45) ---
+Totals @0.45 : V3_boxes=134 (V3_susp=22, agree=83.6%) | V2_boxes=153 (V2_susp=40) | Base=147 | V4_Live=125
+Totals @0.35 : V3_boxes=152 (V3_susp=27)
+120218 Full Video (570f @0.45) avg face/frame : V4_Live=0.00 | V3=0.10
+
+Held-Out Video         |  Fr | Base   V4   V2(Susp)   V3(Susp@45)   V3@35(Susp)
+------------------------------------------------------------------------------
+rec_20261111_120218    |  90 |   16    1   34(28)     10( 8)      14( 9)
+rec_20261111_120047    |  90 |   12    4    8( 5)     10( 2)      11( 3)
+rec_20261111_115925    |  90 |   17    4    6( 1)      2( 0)       3( 0)
+rec_20261111_114820    |  90 |    1    5    1( 1)      1( 1)       2( 2)
+rec_20261111_113922    |  90 |    2    7    1( 1)     13( 7)      21( 8)
+rec_20261111_113613    |  90 |    2    5    0( 0)      8( 4)      11( 5)
+rec_20261111_110932    |  90 |   90   90   90( 0)     90( 0)      90( 0)
+rec_20261111_104223    |  90 |    7    9   13( 4)      0( 0)       0( 0)
+
+Top Suspicious V3 Boxes on Held-Out 20261111 Videos (20 shown):
+  [01] rec_20261111_113922 @ 95.7s | V3_susp_conf=0.771 | Base=0 | V4_f=0
+  [02] rec_20261111_120218 @  7.4s | V3_susp_conf=0.751 | Base=0 | V4_f=0
+  [03] rec_20261111_113922 @ 55.2s | V3_susp_conf=0.737 | Base=0 | V4_f=1
+  [04] rec_20261111_113613 @ 71.9s | V3_susp_conf=0.731 | Base=0 | V4_f=0
+  [05] rec_20261111_120218 @  4.8s | V3_susp_conf=0.711 | Base=0 | V4_f=0
+  [06] rec_20261111_120047 @  1.4s | V3_susp_conf=0.696 | Base=0 | V4_f=0
+  [07] rec_20261111_113922 @110.4s | V3_susp_conf=0.695 | Base=0 | V4_f=1
+  [08] rec_20261111_120218 @ 13.3s | V3_susp_conf=0.680 | Base=0 | V4_f=0
+  [09] rec_20261111_113613 @ 77.4s | V3_susp_conf=0.666 | Base=0 | V4_f=0
+  [10] rec_20261111_113922 @125.2s | V3_susp_conf=0.621 | Base=0 | V4_f=0
+  [11] rec_20261111_113922 @ 92.0s | V3_susp_conf=0.588 | Base=0 | V4_f=0
+  [12] rec_20261111_113613 @119.9s | V3_susp_conf=0.559 | Base=0 | V4_f=0
+  [13] rec_20261111_114820 @558.4s | V3_susp_conf=0.533 | Base=0 | V4_f=0
+  [14] rec_20261111_120218 @  0.2s | V3_susp_conf=0.498 | Base=0 | V4_f=0
+  [15] rec_20261111_113922 @ 84.6s | V3_susp_conf=0.430 | Base=0 | V4_f=0
+  [16] rec_20261111_113922 @136.2s | V3_susp_conf=0.414 | Base=0 | V4_f=0
+  [17] rec_20261111_113922 @106.7s | V3_susp_conf=0.394 | Base=0 | V4_f=0
+  [18] rec_20261111_113613 @ 90.4s | V3_susp_conf=0.387 | Base=0 | V4_f=0
+  [19] rec_20261111_120047 @ 21.8s | V3_susp_conf=0.383 | Base=0 | V4_f=0
+  [20] rec_20261111_114820 @543.5s | V3_susp_conf=0.373 | Base=0 | V4_f=0
+================================================================================
